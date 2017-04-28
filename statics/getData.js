@@ -16,7 +16,7 @@ function getAllVideoData(){
 }
 
 function formatVideos(data, length){
-  for(i = 0; i < length; i++{
+  for(i = 0; i < length; i++){
     console.log("title: " + data[i]);
   }
 }
