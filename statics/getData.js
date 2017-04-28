@@ -11,12 +11,13 @@ function getAllVideoData(){
     success: function(res){
       for(i = 0; i < res.length; i++){
         //console.log("Title: " + res[i].title);
-        formatVideos(res[i].title);
+        formatVideos(res[i].title, res[i].id);
       }
     }
   });
 }
 
-function formatVideos(data){
-  console.log("Title: " + data);
+function formatVideos(title, id){
+  console.log("Title: " + title);
+  console.log("ID: " + id);
 }
