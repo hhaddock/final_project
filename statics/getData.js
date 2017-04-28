@@ -22,7 +22,7 @@ function formatVideos(title, id){
 
   vid = "https://www.youtube.com/embed/";
 
-  $('#videoDiv').append('
-      <iframe width="560" height="315" src="'+vid + id+'" frameborder="0" allowfullscreen></iframe><br>
-  ')
+  $('#videoDiv').append("
+      <iframe width='560' height='315' src='"+vid + id+"' frameborder='0' allowfullscreen></iframe><br>
+  ")
 }
