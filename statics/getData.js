@@ -10,7 +10,7 @@ function getAllVideoData(){
     dataType: 'json',
     success: function(res){
       for(i = 0; i < res.length; i++){
-        console.log(res.title);
+        console.log("Title: " + res[i].title);
         //formatVideos(res.title);
       }
     }
