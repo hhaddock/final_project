@@ -21,10 +21,7 @@ function formatVideos(title, id){
   console.log("ID: " + id);
 
   vid = "https://www.youtube.com/embed/"
-
-  var video = document.getElementById('videoDiv');
-  video.innerHTML = '<iframe src="'+vid + id+'" style="border: 0pt none ;'+
-                    'left: -453px; top: -70px; position: absolute;'+
-                    'width: 1440px;'+
-                    'height: 775px;" scrolling="no"></iframe>';
+  $("#videoDiv").append('
+      <iframe width="560" height="315" src="'+vid + id+'" frameborder="0" allowfullscreen></iframe><br>
+  ')
 }
