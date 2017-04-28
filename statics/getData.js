@@ -12,7 +12,7 @@ function getAllVideoData(){
       //console.log(res);
       //formatVideos(res, res.length);
       for(i = 0; i < res.length; i++){
-        console.log("Title: " + res[i]);
+        console.log("Title: " + res[i].title);
       }
     }
   });
