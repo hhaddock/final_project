@@ -9,7 +9,7 @@ function getAllVideoData(){
     url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/videos",
     dataType: 'json',
     success: function(res){
-      formatVideos(res.data, res.length);
+      formatVideos(res.response, res.length);
       // console.log(res.length);
     }
   });
