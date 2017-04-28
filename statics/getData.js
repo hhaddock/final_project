@@ -10,7 +10,6 @@ function getAllVideoData(){
     dataType: 'json',
     success: function(res){
       for(i = 0; i < res.length; i++){
-        //console.log("Title: " + res[i].title);
         formatVideos(res[i].title, res[i].videoID);
       }
     }
@@ -20,4 +19,9 @@ function getAllVideoData(){
 function formatVideos(title, id){
   console.log("Title: " + title);
   console.log("ID: " + id);
+  var video = document.getElementById('videoDiv');
+  video.innerHTML = '<iframe src="http://aol.com" style="border: 0pt none ;'+
+                    'left: -453px; top: -70px; position: absolute;'+
+                    'width: 1440px;'+
+                    'height: 775px;" scrolling="no"></iframe>';
 }
