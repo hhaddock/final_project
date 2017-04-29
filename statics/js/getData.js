@@ -45,7 +45,7 @@ function getVideoGenres(){
     type: 'get',
     success: function(res){
       for(i = 0; i < res.length; i ++){
-        populateDD(res);
+        populateDD(res.genre);
       }
     }
   });
@@ -77,8 +77,6 @@ function clearVideos(){
   $('#videoDiv').text('');
 }
 
-function populateDD(res){
-  dd = $('#genreDD').val();
-
-  console.log(dd);
+function populateDD(genre){
+  $('#genreDD').append("<option>"+genre+"</option>")
 }
