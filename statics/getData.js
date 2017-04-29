@@ -1,7 +1,7 @@
 //TODO: Get data from mLab DB to page using aJax
 
 $(document).ready(function(){
-  $("#videoDiv").hide();
+  $('#videoDiv').hide();
   getAllVideoData();
 });
 
