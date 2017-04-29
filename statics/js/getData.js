@@ -45,7 +45,7 @@ function getVideoGenres(){
     type: 'get',
     success: function(res){
       for(i = 0; i < res.length; i ++){
-        populateDD(res.genre);
+        populateDD(res[i].genre);
       }
     }
   });
