@@ -8,7 +8,7 @@
     <script type="text/javascript" src="../statics/getData.js"></script>
   </head>
   <body>
-    <?php if($_SESSION['loggedin'] == "true"){ ?>
+    <?php if(isset($_SESSION['loggedin'])){ ?>
       <div class="container">
         <div class="jumbotron">
           <div id="navBar" class="form-inline">
