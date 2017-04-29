@@ -43,11 +43,7 @@ function getAllVideoData(){
 }
 
 function formatVideos(title, id){
-  console.log("Title: " + title);
-  console.log("ID: " + id);
-
   vid = "https://www.youtube.com/embed/";
-
   $('#videoDiv').append("<h2>"+title+"</h2><iframe width='560' height='315' src='"+vid + id+"' frameborder='0' allowfullscreen></iframe><br>");
 }
 
