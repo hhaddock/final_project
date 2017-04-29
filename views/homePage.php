@@ -12,7 +12,7 @@
     <?php if(isset($_SESSION['loggedin'])){ ?>
       <div class="container">
         <div class="jumbotron">
-          <h1>Music Video Playlist App</h1>
+          <h1 class="text-center">Music Video Playlist App</h1>
           <hr>
           <div id="navBar" class="text-center form-inline">
             <input type="button" class="btn btn-lg btn-danger" id="showVideos" value="Show/Hide Videos">
