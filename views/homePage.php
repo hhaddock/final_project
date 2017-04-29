@@ -12,7 +12,7 @@
     <?php if(isset($_SESSION['loggedin'])){ ?>
       <div class="container">
         <div class="jumbotron">
-          <div id="navBar" class="form-inline">
+          <div id="navBar" class="text-center form-inline">
             <input type="button" value="Show Videos">
             <input type="button" value="Logout" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/statics/php/logout.php'">
           </div>
