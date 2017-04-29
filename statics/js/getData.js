@@ -66,5 +66,5 @@ function submitVideo(){
   // console.log("Title of video is " + title + " and secret ID is "  +secret[1]);
 }
 function clearVideos(){
-  $('#videoDiv').val(" ");
+  $('#videoDiv').val("<div></div>");
 }
