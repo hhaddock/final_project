@@ -53,7 +53,7 @@ function submitVideo(){
     dataType: 'json',
     data: {title: title, videoID: secret[1]},
     success: function(res){
-      console.log(res);
+      getAllVideoData();
     }
   });
   // console.log("Title of video is " + title + " and secret ID is "  +secret[1]);
