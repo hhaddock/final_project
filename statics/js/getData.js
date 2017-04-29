@@ -3,7 +3,7 @@
 $(document).ready(function(){
   $('#videoDiv').hide();
   $('#addVideoForm').hide();
-  getAllVideoData();
+  // getAllVideoData();
 
   $('#showVideos').click(function(){
     getAllVideoData();
@@ -18,6 +18,7 @@ $(document).ready(function(){
 
   $('#addVidBtn').click(function(){
     submitVideo();
+    getAllVideoData();
     $('#addVideoForm').slideUp();
     $('#videoDiv').slideToggle("slow");
   });
