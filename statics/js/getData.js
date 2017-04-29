@@ -4,10 +4,6 @@ $(document).ready(function(){
   $('#videoDiv').hide();
   $('#addVideoForm').hide();
 
-  $('#genreDD').on('load', function(){
-    populateDD();
-  });
-
   $('#showVideos').click(function(){
     clearVideos();
     getAllVideoData();
@@ -16,6 +12,7 @@ $(document).ready(function(){
   });
 
   $('#addVideo').click(function(){
+    populateDD();
     $('#videoDiv').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
