@@ -6,6 +6,7 @@ $(document).ready(function(){
   // getAllVideoData();
 
   $('#showVideos').click(function(){
+    clearVideos();
     getAllVideoData();
     $('#addVideoForm').slideUp();
     $('#videoDiv').slideToggle("slow");
