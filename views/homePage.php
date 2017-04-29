@@ -26,12 +26,12 @@
           <div id="addVideoForm" class="form-group">
             <div class="row">
               <div class="col-md-4 col-md-offset-4">
-                <input type="text" class="form-control" placeholder="Video Title"><br>
+                <input type="text" id="vidTitle" class="form-control" placeholder="Video Title"><br>
               </div>
             </div>
             <div class="row">
               <div class="col-md-4 col-md-offset-4">
-                <input type="text" class="form-control" placeholder="YouTube Link"><br>
+                <input type="text" id="vidLink" class="form-control" placeholder="YouTube Link"><br>
               </div>
             </div>
             <div class="row">

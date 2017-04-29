@@ -1,3 +1,6 @@
 function submitVideo(){
-  console.log("Test");
+  title = $('#vidTitle').val();
+  vidLink = $('#vidLink').val();
+
+  console.log(title + " " + vidLink);
 }
