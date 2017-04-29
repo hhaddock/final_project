@@ -53,6 +53,10 @@ function submitVideo(){
     dataType: 'json',
     data: {title: title, videoID: secret[1]},
     success: function(res){
+      title = "";
+      vidLink = "";
+      $('#addVideoForm').slideUp();
+      $('#videoDiv').slideToggle("slow");
       getAllVideoData();
     }
   });
