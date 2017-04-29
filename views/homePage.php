@@ -31,7 +31,11 @@
                 <input type="text" class="form-control" placeholder="Video Title"><br>
               </div>
             </div>
-            <input type="button" class="btn btn-primary" value="Submit">
+            <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                <input type="button" class="btn btn-primary" value="Submit">
+              </div>
+            </div>
           </form>
           <div id="videoDiv" class="text-center">
 
