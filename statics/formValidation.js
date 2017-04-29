@@ -4,7 +4,4 @@ function validateForm(){
   } else {
     $('#loginForm').submit();
   }
-  //
-  // console.log($('#userID').val());
-  // console.log($('#passID').val());
 }
