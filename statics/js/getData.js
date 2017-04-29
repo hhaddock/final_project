@@ -44,6 +44,7 @@ function getVideoGenres(){
     url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/videos",
     type: 'get',
     success: function(res){
+      console.log(res);
       for(i = 0; i < res.length; i ++){
         populateDD(res[i].genre);
       }
