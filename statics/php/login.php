@@ -1,8 +1,8 @@
 <?php
   if(isset($_POST['username'])){
     if(isset($_POST['password'])){
-      $user = $_POST['username'];
-      $pass = $_POST['password'];
+      $user = htmlspecialchars($_POST['username']);
+      $pass = htmlspecialchars($_POST['password']);
       if($user == "test" && $pass == "pass"){
         echo "Successfully logged in!";
         session_start();
