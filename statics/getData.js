@@ -2,10 +2,15 @@
 
 $(document).ready(function(){
   $('#videoDiv').hide();
+  $('#addVideoForm').hide();
   getAllVideoData();
 
   $('#showVideos').click(function(){
     $('#videoDiv').slideToggle("slow");
+  });
+
+  $('#addVideo').click(function(){
+    $('#addVideoForm').slideToggle("slow");
   });
 });
 

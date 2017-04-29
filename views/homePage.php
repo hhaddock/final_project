@@ -20,6 +20,9 @@
             <input type="button" class="btn btn-lg btn-info" value="Logout" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/statics/php/logout.php'">
           </div>
           <hr>
+          <form class="form-group" id="addVideoForm" action="index.html" method="post">
+
+          </form>
           <div id="videoDiv" class="text-center">
 
           </div>
