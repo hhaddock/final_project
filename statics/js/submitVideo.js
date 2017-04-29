@@ -3,6 +3,5 @@ function submitVideo(){
   vidLink = $('#vidLink').val();
 
   secret = vidLink.split("v=");
-  console.log(secret[1]);
-  // console.log(title + " " + vidLink);
+  console.log("Title of video is " + title + " and secret ID is "  +secret[1]);
 }
