@@ -18,6 +18,7 @@ $(document).ready(function(){
 
   $('#addVidBtn').click(function(){
     submitVideo();
+    clearVideos();
     getAllVideoData();
     $('#addVideoForm').slideUp();
     $('#videoDiv').slideToggle("slow");
@@ -62,4 +63,7 @@ function submitVideo(){
     }
   });
   // console.log("Title of video is " + title + " and secret ID is "  +secret[1]);
+}
+function clearVideos(){
+  $('#videoDiv').val("");
 }
