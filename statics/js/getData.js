@@ -1,19 +1,19 @@
 //TODO: Get data from mLab DB to page using aJax
 
 $(document).ready(function(){
-  $('#videoDiv').hide();
+  $('#videoArea').hide();
   $('#addVideoForm').hide();
 
   $('#showVideos').click(function(){
     clearVideos();
     getAllVideoData();
     $('#addVideoForm').slideUp();
-    $('#videoDiv').slideToggle("slow");
+    $('#videoArea').slideToggle("slow");
   });
 
   $('#addVideo').click(function(){
     getVideoGenres();
-    $('#videoDiv').slideUp();
+    $('#videoArea').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
 
@@ -22,7 +22,7 @@ $(document).ready(function(){
     clearVideos();
     getAllVideoData();
     $('#addVideoForm').slideUp();
-    $('#videoDiv').slideToggle("slow");
+    $('#videoArea').slideToggle("slow");
   });
 });
 
