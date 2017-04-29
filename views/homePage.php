@@ -58,10 +58,8 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4 col-md-offset-4">
-                <div id="videoDiv" class="text-center">
+              <div id="videoDiv" class="text-center">
 
-                </div>
               </div>
             </div>
           </div>
