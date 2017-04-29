@@ -36,14 +36,14 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-md-offset-4">
-                <input type="button" id="addVidBtn" class="btn btn-primary" value="Submit">
+                <select id="genreDD" class="form-control">
+                  <option disabled selected>Choose a Genre</option>
+                </select><br>
               </div>
             </div>
             <div class="row">
               <div class="col-md-4 col-md-offset-4">
-                <select id="genreDD" class="form-control">
-                  <option disabled selected>Choose a Genre</option>
-                </select>
+                <input type="button" id="addVidBtn" class="btn btn-primary" value="Submit">
               </div>
             </div>
           </div>
