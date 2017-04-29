@@ -2,10 +2,7 @@ function submitVideo(){
   title = $('#vidTitle').val();
   vidLink = $('#vidLink').val();
 
-  maxlen = vidLink.length;
-
-  for(i = maxlen; i > maxlen - 11; i--){
-    console.log(vidLink[i]);
-  }
+  secret = vidLink.split("v=");
+  console.log(secret);
   // console.log(title + " " + vidLink);
 }
