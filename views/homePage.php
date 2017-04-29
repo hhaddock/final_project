@@ -54,10 +54,14 @@
               <div class="col-md-4 col-md-offset-4">
                 <select id="genreDD" class="form-control">
                   <option disabled selected>Choose a Genre</option>
-                </select><br>
-              </div><br>
-              <div id="videoDiv" class="">
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                <div id="videoDiv" class="">
 
+                </div>
               </div>
             </div>
           </div>
