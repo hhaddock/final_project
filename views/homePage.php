@@ -14,12 +14,14 @@
         <div class="jumbotron">
           <h1 class="text-center">Music Video Playlist App</h1>
           <hr>
+          <!-- TDOD: Make navbar not shit -->
           <div id="navBar" class="text-center form-inline">
             <input type="button" class="btn btn-lg btn-danger" id="showVideos" value="Show/Hide Videos">
             <input type="button" class="btn btn-lg btn-warning" id="addVideo" value="Add Video">
             <input type="button" class="btn btn-lg btn-info" value="Logout" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/statics/php/logout.php'">
           </div>
           <hr>
+          <!-- Add Video Form -->
           <div id="addVideoForm" class="form-group">
             <div class="row">
               <div class="col-md-4 col-md-offset-4">
@@ -37,6 +39,7 @@
               </div>
             </div>
           </div>
+          <!-- Show All Videos -->
           <div id="videoDiv" class="text-center">
 
           </div>
