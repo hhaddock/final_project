@@ -67,5 +67,6 @@ function clearVideos(){
 
 function populateDD(){
   dd = $('#genreDD').val();
+  dd.append('<option>test</option>')
   console.log(dd);
 }
