@@ -21,8 +21,7 @@
         </div>
       </div>
       <?php } else {
-        // header("Location: http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/");
-        echo $_SESSION['loggedin'];
+        header("Location: http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/");
       } ?>
   </body>
 </html>
