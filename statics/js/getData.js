@@ -6,6 +6,7 @@ $(document).ready(function(){
   getAllVideoData();
 
   $('#showVideos').click(function(){
+    getAllVideoData();
     $('#addVideoForm').slideUp();
     $('#videoDiv').slideToggle("slow");
   });
@@ -17,6 +18,8 @@ $(document).ready(function(){
 
   $('#addVidBtn').click(function(){
     submitVideo();
+    $('#addVideoForm').slideUp();
+    $('#videoDiv').slideToggle("slow");
   });
 });
 
@@ -55,9 +58,6 @@ function submitVideo(){
     success: function(res){
       title = "";
       vidLink = "";
-      $('#addVideoForm').slideUp();
-      $('#videoDiv').slideToggle("slow");
-      getAllVideoData();
     }
   });
   // console.log("Title of video is " + title + " and secret ID is "  +secret[1]);
