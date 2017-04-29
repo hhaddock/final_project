@@ -39,9 +39,16 @@ function getAllVideoData(){
   });
 }
 
-function formatVideos(title, id){
-  vid = "https://www.youtube.com/embed/";
-  $('#videoDiv').append("<h2>"+title+"</h2><iframe width='560' height='315' src='"+vid + id+"' frameborder='0' allowfullscreen></iframe><br>");
+function getVideoGenres(){
+  $.ajax({
+    url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/videos",
+    type: 'get',
+    success: function(res){
+      for(i = 0; i < res.length; i ++){
+        populateDD(res);
+      }
+    }
+  });
 }
 
 function submitVideo(){
@@ -59,14 +66,19 @@ function submitVideo(){
       vidLink = "";
     }
   });
-  // console.log("Title of video is " + title + " and secret ID is "  +secret[1]);
 }
+
+function formatVideos(title, id){
+  vid = "https://www.youtube.com/embed/";
+  $('#videoDiv').append("<h2>"+title+"</h2><iframe width='560' height='315' src='"+vid + id+"' frameborder='0' allowfullscreen></iframe><br>");
+}
+
 function clearVideos(){
   $('#videoDiv').text('');
 }
 
-function populateDD(){
+function populateDD(res){
   dd = $('#genreDD').val();
-  $('#genreDD').append('<option>test</option>')
+
   console.log(dd);
 }
