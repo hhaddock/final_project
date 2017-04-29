@@ -14,6 +14,10 @@ $(document).ready(function(){
     $('#videoDiv').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
+
+  $('#addVidBtn').click(function(){
+    submitVideo();
+  });
 });
 
 function getAllVideoData(){
@@ -36,4 +40,21 @@ function formatVideos(title, id){
   vid = "https://www.youtube.com/embed/";
 
   $('#videoDiv').append("<h2>"+title+"</h2><iframe width='560' height='315' src='"+vid + id+"' frameborder='0' allowfullscreen></iframe><br>");
+}
+
+function submitVideo(){
+  title = $('#vidTitle').val();
+  vidLink = $('#vidLink').val();
+
+  secret = vidLink.split("v=");
+  $.ajax({
+    url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/videos",
+    type: 'post',
+    dataType: 'json',
+    data: {title: title, videoID: secret[1]},
+    success(function(res){
+      console.log(res);
+    });
+  });
+  // console.log("Title of video is " + title + " and secret ID is "  +secret[1]);
 }
