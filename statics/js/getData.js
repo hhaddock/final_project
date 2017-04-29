@@ -68,3 +68,8 @@ function submitVideo(){
 function clearVideos(){
   $('#videoDiv').text('');
 }
+
+function populateDD(){
+  dd = $('#genreDD').val();
+  console.log(dd);
+}
