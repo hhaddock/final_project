@@ -6,4 +6,5 @@ function validateForm(){
   // }
 
   console.log($('#userID').val());
+  console.log($('#passID').val());
 }
