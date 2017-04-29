@@ -12,7 +12,7 @@ $(document).ready(function(){
   });
 
   $('#addVideo').click(function(){
-    populateDD();
+    getVideoGenres();
     $('#videoDiv').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
