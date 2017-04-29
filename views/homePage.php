@@ -8,12 +8,19 @@
     <script type="text/javascript" src="../statics/getData.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <div id="videoDiv" class="text-center">
-          
+    <?php if($_SESSION['loggedin'] == "true"){ ?>
+      <div class="container">
+        <div class="jumbotron">
+          <div id="navBar" class="form-inline">
+            <input type="button" value="Show Videos">
+          </div>
+          <div id="videoDiv" class="text-center">
+
+          </div>
         </div>
       </div>
-    </div>
+      <?php } else {
+        header("Location: http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/");
+      } ?>
   </body>
 </html>
