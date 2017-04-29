@@ -34,6 +34,7 @@ function getAllVideoData(){
     success: function(res){
       for(i = 0; i < res.length; i++){
         formatVideos(res[i].title, res[i].videoID);
+        populateDD(res[i].genre, '#genreFilterDD');
       }
     }
   });
