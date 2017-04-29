@@ -6,10 +6,12 @@ $(document).ready(function(){
   getAllVideoData();
 
   $('#showVideos').click(function(){
+    $('#addVideoForm').slideUp();
     $('#videoDiv').slideToggle("slow");
   });
 
   $('#addVideo').click(function(){
+    $('#videoDiv').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
 });
