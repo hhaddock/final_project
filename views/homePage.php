@@ -49,15 +49,15 @@
             </div>
           </div>
           <!-- Show All Videos -->
-          <div id="videoDiv" class="text-center">
+          <div class="text-center">
             <div class="row">
               <div class="col-md-4 col-md-offset-4">
                 <select id="genreDD" class="form-control">
                   <option disabled selected>Choose a Genre</option>
                 </select><br>
               </div>
+            </div>
           </div>
-        </div>
       </div>
       <?php } else {
         header("Location: http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/");
