@@ -3,7 +3,10 @@
 $(document).ready(function(){
   $('#videoDiv').hide();
   $('#addVideoForm').hide();
-  // getAllVideoData();
+
+  $('#genreDD').on('load', function(){
+    populateDD();
+  });
 
   $('#showVideos').click(function(){
     clearVideos();
