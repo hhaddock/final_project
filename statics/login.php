@@ -6,7 +6,7 @@
       if($user == "test" && $pass == "pass"){
         echo "Successfully logged in!";
       } else {
-        header("Location: http://http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/");
+        header("Location: http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/");
       }
     }
   } else {
