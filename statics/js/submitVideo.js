@@ -3,6 +3,6 @@ function submitVideo(){
   vidLink = $('#vidLink').val();
 
   secret = vidLink.split("v=");
-  console.log(secret);
+  console.log(secret[1]);
   // console.log(title + " " + vidLink);
 }
