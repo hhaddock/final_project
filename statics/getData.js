@@ -5,7 +5,7 @@ $(document).ready(function(){
   getAllVideoData();
 
   $('#showVideos').click(function(){
-    $('#videoDiv').slideDown("slow");
+    $('#videoDiv').slideToggle("slow");
   });
 });
 
