@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../statics/styles.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script type="text/javascript" src="../statics/getData.js"></script>
+    <script type="text/javascript" src="../statics/js/getData.js"></script>
+    <script type="text/javascript" src="../statics/js/submitVideo.js"></script>
   </head>
   <body>
     <?php if(isset($_SESSION['loggedin'])){ ?>
@@ -35,7 +36,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-md-offset-4">
-                <input type="button" class="btn btn-primary" value="Submit">
+                <input type="button" class="btn btn-primary" value="Submit" onclick="submitVideo()">
               </div>
             </div>
           </div>
