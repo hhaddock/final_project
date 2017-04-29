@@ -21,8 +21,16 @@
           </div>
           <hr>
           <form class="form-group" id="addVideoForm" action="" method="post">
-            <input type="text" class="form-control" placeholder="Video Title"><br>
-            <input type="text" class="form-control" placeholder="Youtube Link">
+            <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                <input type="text" class="form-control" placeholder="Video Title"><br>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                <input type="text" class="form-control" placeholder="Video Title"><br>
+              </div>
+            </div>
             <input type="button" class="btn btn-primary" value="Submit">
           </form>
           <div id="videoDiv" class="text-center">
