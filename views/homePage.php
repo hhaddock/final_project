@@ -39,6 +39,13 @@
                 <input type="button" id="addVidBtn" class="btn btn-primary" value="Submit">
               </div>
             </div>
+            <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                <select id="genreDD" class="form-control">
+                  <option disabled selected>Choose a Genre</option>
+                </select>
+              </div>
+            </div>
           </div>
           <!-- Show All Videos -->
           <div id="videoDiv" class="text-center">
