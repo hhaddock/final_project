@@ -55,7 +55,7 @@
                 <select id="genreDD" class="form-control">
                   <option disabled selected>Choose a Genre</option>
                 </select><br>
-              </div>
+              </div><br>
               <div id="videoDiv" class="">
 
               </div>
