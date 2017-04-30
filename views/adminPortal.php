@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <div class="">
+        <div class="text-center">
           <h1>Music Video Player Admin Portal</h1>
           <hr>
         </div>
