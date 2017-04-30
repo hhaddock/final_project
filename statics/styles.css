@@ -4,6 +4,9 @@ iframe{
 
 body{
   background-image: url(../assets/bng.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 span{
