@@ -33,9 +33,9 @@ function getAllVideoData(){
     type: 'get',
     dataType: 'json',
     success: function(res){
+      clearDD('#genreFilterDD');
       for(i = 0; i < res.length; i++){
         formatVideos(res[i].title, res[i].videoID);
-        clearDD('#genreFilterDD');
         populateDD(res[i].genre,res[i]._id, '#genreFilterDD');
       }
     }
