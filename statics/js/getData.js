@@ -137,7 +137,7 @@ function validateNewVideoForm(){
       alert("yay!");
     }
     // return 1;
-    console.log($('#genreDD').val());
+    console.log($('#genreDD').text());
   } else {
     return 0;
   }
