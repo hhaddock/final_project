@@ -1,3 +1,7 @@
+iframe{
+  border-radius: 5px;
+}
+
 .hidden{
   display: none;
 }
@@ -14,8 +18,4 @@
   height: 100px;
   background-color: #ccc;
   border-radius: 3px;
-}
-
-.selectWidth{
-  
 }
