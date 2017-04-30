@@ -9,7 +9,6 @@ $(document).ready(function(){
     clearVideos();
     getAllVideoData();
     $('#addVideoForm').slideUp();
-    clearDD('#genreFilterDD');
     $('#videoArea').slideToggle("slow");
   });
 
