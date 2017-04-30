@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../statics/styles.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="../statics/js/getData.js"></script>
-    <script type="text/javascript" src="../statics/js/submitVideo.js"></script>
   </head>
   <body>
     <?php if(isset($_SESSION['loggedin'])){ ?>
