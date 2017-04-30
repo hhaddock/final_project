@@ -14,9 +14,11 @@ $(document).ready(function(){
   });
 
   $('#addVideo').click(function(){
-    getAllVideoData();
-    $('#videoArea').slideUp();
-    $('#addVideoForm').slideToggle("slow");
+    setTimeout(function(){
+        getAllVideoData();
+        $('#videoArea').slideUp();
+        $('#addVideoForm').slideToggle("slow");
+      }, 5000);
   });
 
   $('#addVidBtn').click(function(){
