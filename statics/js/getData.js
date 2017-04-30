@@ -120,7 +120,7 @@ function clearVideos(){
 
 function clearDD(){
   $('#genreDD').text('');
-  $('#genreDD').append("<option disabled selected value='0'>Choose A Genre...</option>");
+  $('#genreDD').append("<option disabled selected value='none'>Choose A Genre...</option>");
   $('#genreFilterDD').text('');
   $('#genreFilterDD').append("<option disabled selected value=''>Filter by a specific genre</option>");
 }
