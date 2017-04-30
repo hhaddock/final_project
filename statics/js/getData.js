@@ -1,5 +1,3 @@
-//TODO: Get data from mLab DB to page using aJax
-
 $(document).ready(function(){
   $('#videoArea').hide();
   $('#addVideoForm').hide();
@@ -43,6 +41,7 @@ $(document).ready(function(){
     filterVideos(genre);
   });
 
+  //new video submission form validation for DD
   validate();
   $('#vidTitle, #vidLink').on('keyup',validate);
 });
@@ -150,5 +149,4 @@ function validate(){
     else {
       $("#genreDD").attr("disabled", true);
     }
-    console.log($('#vidTitle').val());
 }
