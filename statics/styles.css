@@ -119,7 +119,7 @@ body{
 }
 .videoBg{
   position: absolute;
-  z-index: -1;
+  z-index: auto;
 }
 
 .videoFg{
