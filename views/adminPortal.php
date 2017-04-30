@@ -28,21 +28,21 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 col-md-push-1">
+          <div class="col-md-4">
             <div id="addGenreForm" class="form-group">
               <br>
               <input type="text" id="newGenre" class="form-control" placeholder="Enter Genre Here"><br>
               <input type="button" id="submitNewGenre" class="btn btn-success" value="Add Genre">
             </div>
           </div>
-          <div class="col-md-3 col-md-push-2">
+          <div class="col-md-4">
             <div id="deleteGenreForm" class="form-group">
               <br>
               <input type="text" id="genreToDelete" class="form-control" placeholder="Enter Genre Here"><br>
               <input type="button" id="submitDeleteGenre" class="btn btn-primary" value="Delete Genre">
             </div>
           </div>
-          <div class="col-md-3 col-md-push-3">
+          <div class="col-md-4">
             <div id="deleteVideoForm" class="form-group">
               <br>
               <input type="text" id="" class="form-control" placeholder="Enter Video Title"><br>
