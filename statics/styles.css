@@ -49,7 +49,7 @@ body{
 }
 
 .textShadow{
-  text-shadow: 5px 5px 3px lightgrey;
+  text-shadow: 2px 2px 1px darkgrey;
 }
 
 .btnInline{
