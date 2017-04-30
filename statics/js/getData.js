@@ -83,6 +83,7 @@ function clearVideos(){
 
 function clearDD(loc){
   $(loc).text('');
+  $(loc).append("<option disabled selected>Choose A Genre...</option>");
 }
 
 function populateDD(genre, loc){
