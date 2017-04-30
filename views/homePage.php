@@ -56,7 +56,7 @@
                   <select id="genreFilterDD" class="form-control">
                     <option disabled selected>Choose a Genre</option>
                   </select>
-                  <input type="button" id="resetFilterBtn" class="btn btn-primary" value="Reset">
+                  <input type="button" id="resetFilterBtn" class="btn btn-primary btn-block" value="Reset">
                 </div>
               </div>
             </div>
