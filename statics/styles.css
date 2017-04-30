@@ -3,6 +3,12 @@ iframe{
   box-shadow: 5px 5px 5px #262626;
 }
 
+span{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  color: black
+}
+
 hr{
   background-color: #b3b3b3;
   border: 1px solid grey;
