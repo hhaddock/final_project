@@ -5,8 +5,9 @@ iframe{
 
 hr{
   background-color: #b3b3b3;
-  /*border: 1px solid grey;*/
+  border: 1px solid grey;
   opacity: 0.4;
+  margin-bottom: 5%;
 }
 
 h1{
