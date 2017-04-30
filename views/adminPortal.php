@@ -42,13 +42,20 @@
               <input type="button" id="submitDeleteGenre" class="btn btn-primary" value="Delete Genre">
             </div>
           </div>
+          <div class="col-md-3">
+            <div id="deleteVideoForm" class="form-group">
+              <br>
+              <input type="text" id="" class="form-control" placeholder="Enter Genre Here"><br>
+              <input type="button" id="" class="btn btn-primary" value="Delete Genre">
+            </div>
+          </div>
           <hr>
           <div class="row">
             <div class="col-md-12">
               <h4 id="messageText" class="text-center"></h4>
             </div>
           </div>
-        </div>
+      </div>
     </div>
   </body>
   <footer>
