@@ -22,7 +22,7 @@ $(document).ready(function(){
     if(submit == 0){
       submitVideo();
       clearVideos();
-      getAllVideoData();
+      getVideoGenres();
       $('#addVideoForm').slideUp();
       $('#videoArea').fadeIn("slow");
     } else {
