@@ -62,8 +62,10 @@
               </div>
             </div>
             <div class="row">
-              <div id="videoDiv" class="form-group">
+              <div class="col-md-6">
+                <div id="videoDiv" class="form-group">
 
+                </div>
               </div>
             </div>
           </div>
