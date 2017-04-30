@@ -45,6 +45,10 @@ body{
   box-shadow: 5px 5px 3px #888888;
 }
 
+.shadowBlack{
+  box-shadow: 5px 5px 3px #060607;
+}
+
 .btnInline{
   width: 10em;
 }
@@ -60,7 +64,6 @@ body{
 .paperTexture{
   background-image: url(../assets/paperTexture.png);
   border-radius: 6px;
-  box-shadow: 5px 5px 3px #060607;
 }
 
 .titleText{
