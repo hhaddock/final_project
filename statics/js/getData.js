@@ -113,7 +113,7 @@ function formatVideos(title, id){
 
 function playVideo(id){
   // $('#'+id).replaceWith('<p>This is a test</p>');
-  console.log($('#'+id).val());
+  console.log($('#'+id));
 }
 
 function clearVideos(){
