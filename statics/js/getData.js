@@ -3,6 +3,7 @@
 $(document).ready(function(){
   $('#videoArea').hide();
   $('#addVideoForm').hide();
+  getVideoGenres();
 
   $('#showVideos').click(function(){
     clearVideos();
@@ -13,7 +14,6 @@ $(document).ready(function(){
   });
 
   $('#addVideo').click(function(){
-    getVideoGenres();
     $('#videoArea').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
@@ -29,6 +29,7 @@ $(document).ready(function(){
   $('#resetFilterBtn').click(function(){
     clearVideos();
     getAllVideoData();
+    getVideoGenres();
   });
 
   $('#genreFilterDD').on('change',function(){
