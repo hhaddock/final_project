@@ -57,7 +57,8 @@ function getVideoGenres(){
     success: function(res){
       for(i = 0; i < res.length; i++){
         // populateDD(res[i].genre, '#genreDD');
-        populateDD(res[i].genre, '#genreFilterDD');
+        // populateDD(res[i].genre, '#genreFilterDD');
+        populateDropDowns(res[i].genre);
       }
     }
   });
@@ -113,4 +114,8 @@ function clearDD(loc){
 
 function populateDD(genre, loc){
   $(loc).append("<option value='"+genre+"' >"+genre+"</option>");
+}
+
+function populateDropDowns(genre){
+  $('#genreFilterDD').append("<option value='"+genre+"' >"+genre+"</option>");
 }
