@@ -3,7 +3,7 @@
 $(document).ready(function(){
   $('#videoArea').hide();
   $('#addVideoForm').hide();
-
+  getAllVideoData();
   $('#videoArea').fadeIn("slow");
 
   $('#showVideos').click(function(){
