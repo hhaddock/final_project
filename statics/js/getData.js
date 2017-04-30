@@ -32,7 +32,7 @@ $(document).ready(function(){
     }
 
     validate();
-    $('#vidTitle, #vidLink').change(validate);
+    $('#vidTitle, #vidLink').on('change',validate);
 
   });
 
