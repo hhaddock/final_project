@@ -10,7 +10,7 @@
   </head>
   <body>
     <?php if(isset($_SESSION['loggedin'])){ ?>
-      <div class="container">
+      <div class="center-div container">
         <h1 class="text-center">Double H Music Video Player</h1>
         <hr>
         <!-- TDOD: Make navbar not shit -->
