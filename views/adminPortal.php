@@ -59,6 +59,10 @@
     </div>
   </body>
   <footer>
-    <input type="button" class="btn btn-success btn-block" value="Go Back" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/views/homePage.php'">
+    <div class="row">
+      <div class="col-md-12">
+        <input type="button" class="btn btn-success btn-block" value="Go Back" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/views/homePage.php'">
+      </div>
+    </div>
   </footer>
 </html>
