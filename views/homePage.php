@@ -51,8 +51,8 @@
           <!-- Show All Videos -->
           <div id="videoArea" class="text-center">
             <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-                <div class="form-inline">
+              <div class="form-inline">
+                <div class="col-md-6 col-md-offset-3">
                   <select id="genreFilterDD" class="form-control">
                     <option disabled selected>Choose a Genre</option>
                   </select>
