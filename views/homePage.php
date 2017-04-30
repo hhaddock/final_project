@@ -12,7 +12,7 @@
     <?php if(isset($_SESSION['loggedin'])){ ?>
       <div class="container">
         <div class="jumbotron">
-          <h1 class="text-center">Music Video Playlist App</h1>
+          <h1 class="text-center">Double H Music Video Player</h1>
           <hr>
           <!-- TDOD: Make navbar not shit -->
           <div id="navBar" class="text-center form-inline">
