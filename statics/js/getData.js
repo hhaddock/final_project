@@ -49,7 +49,7 @@ function getVideoGenres(){
     success: function(res){
       console.log(res);
       for(i = 0; i < res.length; i ++){
-        populateDD(res[i].genre, '#genreDD');
+        populateDD(res[i].genre, res[i].id, '#genreDD');
       }
     }
   });
@@ -86,6 +86,6 @@ function clearDD(loc){
   $(loc).append("<option disabled selected>Choose A Genre...</option>");
 }
 
-function populateDD(genre, loc){
-  $(loc).append("<option>"+genre+"</option>");
+function populateDD(genre, id, loc){
+  $(loc).append("<option id='"+id+"' >"+genre+"</option>");
 }
