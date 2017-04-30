@@ -22,12 +22,11 @@ $(document).ready(function(){
   $('#addVidBtn').click(function(){
     submit = validateNewVideoForm();
     if(submit == 0){
-      // submitVideo();
-      // clearVideos();
-      // getAllVideoData();
-      // $('#addVideoForm').slideUp();
-      // $('#videoArea').fadeIn("slow");
-      alert("It worked!");
+      submitVideo();
+      clearVideos();
+      getAllVideoData();
+      $('#addVideoForm').slideUp();
+      $('#videoArea').fadeIn("slow");
     } else {
       alert("Error: all form elements must be filled out.");
     }
@@ -132,7 +131,7 @@ function populateDropDowns(genre){
 }
 
 function validateNewVideoForm(){
-  if($('#vidTitle').val() == ''){
+  if($('#vidTitle').val() == '' || $('#vidLink').val() == '' || $('#genreDD').val() == ''){
     return 1;
   } else {
     return 0;
