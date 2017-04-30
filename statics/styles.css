@@ -43,7 +43,7 @@ body{
 .bgGif {
   background-image: url(../assets/bg.gif);
   background-size: cover;
-  background-position: 0 0;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: -1;
