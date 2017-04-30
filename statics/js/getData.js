@@ -3,6 +3,7 @@
 $(document).ready(function(){
   $('#videoArea').hide();
   $('#addVideoForm').hide();
+  getVideoGenres();
 
   $('#showVideos').click(function(){
     clearVideos();
@@ -17,7 +18,7 @@ $(document).ready(function(){
   });
 
   $('#addVidBtn').click(function(){
-    submitVideo();
+    submitVideo();z
     clearVideos();
     getAllVideoData();
     $('#addVideoForm').slideUp();
@@ -55,7 +56,7 @@ function getVideoGenres(){
     url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/genres",
     type: 'get',
     success: function(res){
-      for(i = 0; i < res.length; i ++){
+      for(i = 0; i < res.length; i++){
         populateDD(res[i].genre, '#genreDD');
         populateDD(res[i].genre, '#genreFilterDD');
       }
