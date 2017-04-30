@@ -5,17 +5,13 @@ $(document).ready(function(){
   $('#addVideoForm').hide();
 
   $('#showVideos').click(function(){
-    clearDD('#genreDD');
     clearVideos();
     getAllVideoData();
-    getVideoGenres();
     $('#addVideoForm').slideUp();
     $('#videoArea').slideToggle("slow");
   });
 
   $('#addVideo').click(function(){
-    clearDD('#genreFilterDD');
-    getVideoGenres();
     $('#videoArea').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
@@ -23,10 +19,7 @@ $(document).ready(function(){
   $('#addVidBtn').click(function(){
     submitVideo();
     clearVideos();
-    clearDD('#genreFilterDD');
-    clearDD('#genreDD');
     getAllVideoData();
-    getVideoGenres();
     $('#addVideoForm').slideUp();
     $('#videoArea').slideToggle("slow");
   });
