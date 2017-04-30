@@ -31,11 +31,9 @@ $(document).ready(function(){
       alert("Error: all form elements must be filled out.");
     }
 
-    $('#genreDD').click(function(){
-      if($('#vidTitle').val() != '' && $('#vidLink').val() != ''){
-        $('#genreDD').removeAtt('disabled');
-      }
-    });
+    validate();
+    $('#inputName, #inputEmail, #inputTel').change(validate);
+
   });
 
   $('#resetFilterBtn').click(function(){
@@ -144,4 +142,13 @@ function validateNewVideoForm(){
   } else {
     return 0;
   }
+}
+
+function validate(){
+    if ($('#vidTitle').val().length > 0 && $('#vidLink').val().length > 0) {
+        $("#genreDD").prop("disabled", false);
+    }
+    else {
+        $("input[type=submit]").prop("disabled", true);
+    }
 }
