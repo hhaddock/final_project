@@ -44,7 +44,7 @@ $(document).ready(function(){
   });
 
   validate();
-  $('#vidTitle, #vidLink').on('change',validate);
+  $('#vidTitle, #vidLink').on('keyup',validate);
 });
 
 function getAllVideoData(){
