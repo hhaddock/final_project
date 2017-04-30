@@ -5,7 +5,6 @@ $(document).ready(function(){
   $('#addVideoForm').hide();
 
   $('#showVideos').click(function(){
-    getVideoGenres();
     clearVideos();
     getAllVideoData();
     $('#addVideoForm').slideUp();
@@ -18,7 +17,7 @@ $(document).ready(function(){
   });
 
   $('#addVidBtn').click(function(){
-    submitVideo();z
+    submitVideo();
     clearVideos();
     getAllVideoData();
     $('#addVideoForm').slideUp();
@@ -57,7 +56,7 @@ function getVideoGenres(){
     type: 'get',
     success: function(res){
       for(i = 0; i < res.length; i++){
-        populateDD(res[i].genre, '#genreDD');
+        // populateDD(res[i].genre, '#genreDD');
         populateDD(res[i].genre, '#genreFilterDD');
       }
     }
