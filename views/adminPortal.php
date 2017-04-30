@@ -10,7 +10,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="../statics/js/adminPortal.js"></script>
   </head>
-  <body>
+  <body class="bgGif">
     <div class="container">
         <h1 class="text-center">Music Video Player Admin Portal</h1>
         <hr>
