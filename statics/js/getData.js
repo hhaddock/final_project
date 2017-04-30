@@ -4,6 +4,8 @@ $(document).ready(function(){
   $('#videoArea').hide();
   $('#addVideoForm').hide();
 
+  $('#videoArea').fadeIn("slow");
+
   $('#showVideos').click(function(){
     clearVideos();
     getAllVideoData();
