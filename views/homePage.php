@@ -15,7 +15,7 @@
         <h1 class="text-center titleText">Double H Music Video Player</h1>
         <hr>
         <!-- TDOD: Make navbar not shit -->
-        <div id="navBar" class="text-center form-inline">
+        <div id="navBar" class="text-center">
           <div class="btn-group">
             <input type="button" class="btn btnInline btn-lg btn-danger" id="showVideos" value="Show/Hide Videos">
             <input type="button" class="btn btnInline btn-lg btn-warning" id="addVideo" value="Add Video">
