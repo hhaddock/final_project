@@ -17,6 +17,7 @@
         <hr>
         <div class="form-group">
           <input type="button" id="addGenre" class="btn btn-warning" value="Add A Genre">
+          <input type="button" id="deleteVideo" class="btn btn-Danger" value="Delete A Video">
         </div>
       </div>
     </div>
