@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 push-9">
+          <div class="col-md-3 push-6">
             <div id="addGenreForm" class="form-group">
               <br>
               <input type="text" id="newGenre" class="form-control" placeholder="Enter Genre Here"><br>
