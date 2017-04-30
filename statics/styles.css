@@ -89,7 +89,7 @@ body{
 }
 
 .box:before {
-  background: linear-gradient(-25deg, #262626 10px, transparent 0), linear-gradient(25deg, #262626 10px, transparent 0);
+  background: linear-gradient(-25deg, #262626 15px, transparent 0), linear-gradient(25deg, #262626 15px, transparent 0);
   background-position: left-bottom;
   background-repeat: repeat-x;
   background-size: 16px 16px;
