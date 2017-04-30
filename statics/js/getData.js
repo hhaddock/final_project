@@ -8,6 +8,7 @@ $(document).ready(function(){
   $('#showVideos').click(function(){
     clearVideos();
     getAllVideoData();
+    getVideoGenres();
     $('#addVideoForm').slideUp();
     $('#videoArea').slideToggle("slow");
   });
