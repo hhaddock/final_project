@@ -88,20 +88,6 @@ body{
   background: #dddccf;
 }
 
-.box::before {
-  background: linear-gradient(-45deg, #262626 10px, transparent 0), linear-gradient(45deg, #262626 10px, transparent 0);
-  background-position: left-bottom;
-  background-repeat: repeat-x;
-  background-size: 32px 32px;
-  content: " ";
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 32px;
-}
-
 .box:after {
   background: linear-gradient(-45deg, #262626 10px, transparent 0), linear-gradient(45deg, #262626 10px, transparent 0);
   background-position: left-bottom;
