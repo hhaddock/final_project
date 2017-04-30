@@ -1,11 +1,13 @@
 $(document).ready(function(){
+  //hide forms
   $('#addGenreForm').hide();
+  $('#deleteGenreForm').hide();
 
+  //click function for
   $('#addGenre').click(function(){
     $('#addGenreForm').slideToggle();
     $('#submitNewGenre').click(function(){
       if($('#newGenre').val() != ""){
-        // console.log("Test worked");
         addGenre = $('#newGenre').val();
         updateGenreList(addGenre);
       }
