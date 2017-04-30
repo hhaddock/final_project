@@ -12,7 +12,6 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
         <h1 class="text-center">Music Video Player Admin Portal</h1>
         <hr>
         <div class="form-inline">
@@ -50,7 +49,6 @@
             <h4 id="messageText" class="text-center"></h4>
           </div>
         </div>
-      </div>
     </div>
   </body>
 </html>
