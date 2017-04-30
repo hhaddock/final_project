@@ -5,10 +5,10 @@ $(document).ready(function(){
     $('#addGenreForm').slideToggle();
     $('#submitNewGenre').click(function(){
       if($('#newGenre').val() != ""){
-        console.log("Test worked");
+        // console.log("Test worked");
+        addGenre = $('#newGenre').val();
+        updateGenreList(addGenre);
       }
-      // addGenre = $('#newGenre').val();
-      // updateGenreList(addGenre);
     });
   });
 });
