@@ -73,7 +73,7 @@ body{
 
 .paperTexture{
   background-color: rgba(255,255,255,0.5);
-  background-image: url(../assets/paperTexture.png);
+  /*background-image: url(../assets/paperTexture.png);*/
   border-radius: 6px;
 }
 
