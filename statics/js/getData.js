@@ -24,7 +24,7 @@ $(document).ready(function(){
     clearVideos();
     getAllVideoData();
     $('#addVideoForm').slideUp();
-    $('#videoArea').slideToggle("slow");
+    $('#videoArea').fadeIn("slow");
   });
 
   $('#resetFilterBtn').click(function(){
