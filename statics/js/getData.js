@@ -46,7 +46,6 @@ function getAllVideoData(){
       clearDD('#genreFilterDD');
       for(i = 0; i < res.length; i++){
         formatVideos(res[i].title, res[i].videoID);
-        populateDD(res[i].genre, '#genreFilterDD');
       }
     }
   });
@@ -60,6 +59,7 @@ function getVideoGenres(){
       console.log(res);
       for(i = 0; i < res.length; i ++){
         populateDD(res[i].genre, '#genreDD');
+        populateDD(res[i].genre, '#genreFilterDD');
       }
     }
   });
