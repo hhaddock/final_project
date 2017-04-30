@@ -53,10 +53,10 @@
             <div class="row">
               <div class="form-inline">
                 <div class="col-md-10 col-md-offset-1">
-                  <select id="genreFilterDD" class="form-control">
+                  <select id="genreFilterDD" class="form-control btn-block">
                     <option disabled selected>Choose a Genre</option>
                   </select>
-                  <input type="button" id="resetFilterBtn" class="btn btn-primary btn-block" value="Reset">
+                  <input type="button" id="resetFilterBtn" class="btn btn-primary" value="Reset">
                 </div>
               </div>
             </div>
