@@ -1,7 +1,7 @@
 footer{
   position:absolute;
   bottom: 2%;
-  right:50%;
+  float: center;
   width: 3em;
 }
 
