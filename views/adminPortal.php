@@ -23,7 +23,7 @@
               <input type="button" id="deleteGenre" class="btn btn-danger btn-block" value="Delete A Genre">
             </div>
             <div class="col-md-3 col-md-offset-1">
-              <input type="button" id="deleteVideo" class="btn btn-danger btn-block" value="Delete A Video">
+              <input type="button" id="deleteVideo" class="btn btn-info btn-block" value="Delete A Video">
             </div>
           </div>
         </div>
