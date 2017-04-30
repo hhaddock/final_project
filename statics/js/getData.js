@@ -20,8 +20,6 @@ $(document).ready(function(){
       submitVideo();
       clearVideos();
       getVideoGenres();
-      $('#addVideoForm').slideUp();
-      $('#videoArea').fadeIn("slow");
     } else {
       alert("Error: all form elements must be filled out.");
     }
@@ -84,6 +82,8 @@ function submitVideo(){
     success: function(res){
       title = "";
       vidLink = "";
+      $('#addVideoForm').slideUp();
+      $('#videoArea').fadeIn("slow");
     }
   });
 }
