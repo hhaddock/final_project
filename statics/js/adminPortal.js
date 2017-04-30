@@ -4,8 +4,11 @@ $(document).ready(function(){
   $('#addGenre').click(function(){
     $('#addGenreForm').slideToggle();
     $('#submitNewGenre').click(function(){
-      addGenre = $('#newGenre').val();
-      updateGenreList(addGenre);
+      if($('#newGenre').val() != null){
+        console.log("Test worked");
+      }
+      // addGenre = $('#newGenre').val();
+      // updateGenreList(addGenre);
     });
   });
 });
