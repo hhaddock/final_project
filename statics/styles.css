@@ -38,6 +38,7 @@ h3{
 body{
   background-color: #262626;
   color: #bfbfbf;
+  overflow-x:hidden;
 }
 
 .bgGif {
