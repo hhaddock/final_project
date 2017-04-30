@@ -27,7 +27,9 @@ $(document).ready(function(){
   });
 
   $('#genreFilterDD').on('change',function(){
-    console.log($('#genreFilterDD').val());
+    videos = $('#genreFilterDD').val()
+    console.log(videos);
+    filterVideos();
   });
 });
 
@@ -74,6 +76,10 @@ function submitVideo(){
       vidLink = "";
     }
   });
+}
+
+function filterVideos(){
+  
 }
 
 function formatVideos(title, id){
