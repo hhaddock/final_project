@@ -82,7 +82,7 @@ function clearVideos(){
 }
 
 function clearDD(loc){
-  $(loc).val(" ");
+  $(loc).text('');
 }
 
 function populateDD(genre, loc){
