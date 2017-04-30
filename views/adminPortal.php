@@ -46,7 +46,7 @@
         <hr>
         <div class="row">
           <div class="col-md-12">
-            <h5 id="messageText" class="text-center"></h5>
+            <h4 id="messageText" class="text-center"></h4>
           </div>
         </div>
       </div>
