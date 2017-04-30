@@ -14,6 +14,7 @@ $(document).ready(function(){
   });
 
   $('#addVideo').click(function(){
+    getAllVideoData();
     $('#videoArea').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
@@ -117,10 +118,6 @@ function clearDD(){
   $('#genreDD').append("<option disabled selected>Choose A Genre...</option>");
   $('#genreFilterDD').text('');
   $('#genreFilterDD').append("<option disabled selected>Filter by a specific genre</option>");
-}
-
-function populateDD(genre, loc){
-  $(loc).append("<option value='"+genre+"' >"+genre+"</option>");
 }
 
 function populateDropDowns(genre){
