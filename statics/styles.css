@@ -61,7 +61,7 @@ body{
 .paperTexture{
   background-image: url(../assets/paperTexture.png);
   border-radius: 3px;
-  box-shadow: 5px 5px 3px #black;
+  box-shadow: 5px 5px 3px black;
 }
 
 .titleText{
