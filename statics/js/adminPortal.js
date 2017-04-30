@@ -28,6 +28,10 @@ $(document).ready(function(){
       }
     });
   });
+
+  $('#deleteVideo').click(function(){
+    $('#deleteVideoForm').slideDown();
+  });
 });
 
 
