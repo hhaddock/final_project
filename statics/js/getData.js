@@ -30,10 +30,6 @@ $(document).ready(function(){
     } else {
       alert("Error: all form elements must be filled out.");
     }
-
-    validate();
-    $('#vidTitle, #vidLink').on('change',validate);
-
   });
 
   $('#resetFilterBtn').click(function(){
@@ -46,6 +42,9 @@ $(document).ready(function(){
     genre = $('#genreFilterDD').val()
     filterVideos(genre);
   });
+
+  validate();
+  $('#vidTitle, #vidLink').on('change',validate);
 });
 
 function getAllVideoData(){
