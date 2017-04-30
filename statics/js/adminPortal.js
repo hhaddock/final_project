@@ -40,6 +40,8 @@ $(document).ready(function(){
         deleteVideo = $('#videoTitle').val();
         deleteVideoFromList(deleteVideo);
         $('#videoTitle').val('');
+      } else {
+        alert("Error: you must enter a video to delete");
       }
     });
   });
@@ -97,7 +99,7 @@ function deleteVideoFromList(video){
             type: "delete",
             dataType: "json",
             success: function(res){
-              $('#messageText').html(videoString + " has been deleted");  
+              $('#messageText').html(videoString + " has been deleted");
             }
           });
         }
