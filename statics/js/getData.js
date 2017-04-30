@@ -5,14 +5,11 @@ $(document).ready(function(){
   $('#videoArea').fadeIn("slow");
 
   $('#showVideos').click(function(){
-    // clearVideos();
-    // getAllVideoData();
     $('#addVideoForm').hide();
     $('#videoArea').fadeToggle("slow");
   });
 
   $('#addVideo').click(function(){
-    getAllVideoData();
     $('#videoArea').hide();
     $('#addVideoForm').fadeIn("slow");
   });
@@ -33,7 +30,6 @@ $(document).ready(function(){
   $('#resetFilterBtn').click(function(){
     clearVideos();
     getAllVideoData();
-    getVideoGenres();
   });
 
   $('#genreFilterDD').on('change',function(){
