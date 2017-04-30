@@ -48,6 +48,10 @@ body{
   box-shadow: 5px 5px 3px #060607;
 }
 
+.textShadow{
+  text-shadow: 5px 5px 3px #060607;
+}
+
 .btnInline{
   width: 10em;
 }
