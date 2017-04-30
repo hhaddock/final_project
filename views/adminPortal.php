@@ -16,8 +16,12 @@
         <h1>Music Video Player Admin Portal</h1>
         <hr>
         <div class="form-inline">
-          <input type="button" id="addGenre" class="btn btn-warning" value="Add A Genre">
-          <input type="button" id="deleteVideo" class="btn btn-danger" value="Delete A Video">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="button" id="addGenre" class="btn btn-warning" value="Add A Genre">
+              <input type="button" id="deleteVideo" class="btn btn-danger" value="Delete A Video">
+            </div>
+          </div>
         </div>
       </div>
     </div>
