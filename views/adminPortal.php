@@ -23,7 +23,7 @@
               <input type="button" id="deleteVideo" class="btn btn-danger btn-block" value="Delete A Video">
             </div>
             <div class="col-md-3 col-md-offset-1">
-              <input type="button" class="btn btn-info btn-block" value="Go Back" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/'">
+              <input type="button" class="btn btn-info btn-block" value="Go Back" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/views/homePage.php'">
             </div>
           </div>
         </div>
