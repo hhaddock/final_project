@@ -4,8 +4,6 @@ $(document).ready(function(){
   $('#videoArea').hide();
   $('#addVideoForm').hide();
 
-  getVideoGenres();
-
   $('#showVideos').click(function(){
     clearVideos();
     getAllVideoData();
@@ -48,6 +46,7 @@ function getAllVideoData(){
       for(i = 0; i < res.length; i++){
         formatVideos(res[i].title, res[i].videoID);
       }
+      getVideoGenres();
     }
   });
 }
