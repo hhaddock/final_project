@@ -26,6 +26,11 @@ $(document).ready(function(){
     $('#videoArea').slideToggle("slow");
   });
 
+  $('#resetFilterBtn').click(function(){
+    clearVideos();
+    getAllVideoData();
+  });
+
   $('#genreFilterDD').on('change',function(){
     genre = $('#genreFilterDD').val()
     filterVideos(genre);
