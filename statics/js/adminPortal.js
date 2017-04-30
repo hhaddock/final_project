@@ -4,9 +4,23 @@ $(document).ready(function(){
   $('#addGenre').click(function(){
     $('#addGenreForm').slideToggle();
     $('#submitNewGenre').click(function(){
-      // console.log($('#newGenre').val());
-      genre = $('#newGenre').val();
-      $('#genreDD').append("<option value='"+genre+"'>"+genre+"</option>")
+      if($('#newGenre').val() != null){
+        addGenre = $('#newGenre').val();
+        updateGenreList(addGenre);
+      }
     });
   });
 });
+
+
+function updateGenreList(newGenre){
+  $.ajax({
+    url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/genres",
+    type: "post",
+    dataType: "json",
+    data: {genre: newGenre},
+    success: function(res){
+      console.log("Updated Lists of genres with "+ newGenre);
+    }
+  });
+}
