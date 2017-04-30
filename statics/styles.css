@@ -49,8 +49,7 @@ body{
   display: none;
 }
 
-.center-div
-{
+.center-div{
   position: absolute;
   margin: auto;
   top: 0;
