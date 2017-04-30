@@ -141,6 +141,7 @@ function populateDropDowns(genre){
 }
 
 function validateNewVideoForm(){
+  console.log($('#genreDD').val());
   if($('#vidTitle').val() == '' || $('#vidLink').val() == ''){
     if($('#genreDD').val() == 'Choose A Genre...'){
       return 1;
