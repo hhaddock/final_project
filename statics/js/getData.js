@@ -69,13 +69,14 @@ function getVideoGenres(){
 function submitVideo(){
   title = $('#vidTitle').val();
   vidLink = $('#vidLink').val();
+  genre = $('#genreDD').val();
 
   secret = vidLink.split("v=");
   $.ajax({
     url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/videos",
     type: 'post',
     dataType: 'json',
-    data: {title: title, videoID: secret[1]},
+    data: {title: title, videoID: secret[1], genre: genre},
     success: function(res){
       title = "";
       vidLink = "";
