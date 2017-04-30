@@ -62,7 +62,7 @@
               </div>
             </div>
             <div class="row">
-              <div id="videoDiv" class="form-inline">
+              <div id="videoDiv" class="form-group">
 
               </div>
             </div>
