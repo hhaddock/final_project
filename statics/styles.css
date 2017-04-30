@@ -118,9 +118,11 @@ body{
   height: 16px;
 }
 .videoBg{
+  position: absolute;
   z-index: -1;
 }
 
 .videoFg{
+  position: absolute;
   z-index: 1;
 }
