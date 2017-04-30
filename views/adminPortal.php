@@ -60,7 +60,7 @@
   </body>
   <footer>
     <div class="row">
-      <div class="col-md-3 col-md-offset-1">
+      <div class="col-md-4 col-md-offset-4">
         <input type="button" class="btn btn-info btn-block" value="Go Back" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/views/homePage.php'">
       </div>
     </div>
