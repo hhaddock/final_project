@@ -65,7 +65,7 @@ function deleteGenreFromList(deleteGenre){
             dataType: "json",
             success: function(res){
               console.log(res);
-              $('#messageText').html(res + " has been deleted");
+              $('#messageText').html(res[i].genre + " has been deleted");
             }
           });
         }
