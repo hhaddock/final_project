@@ -11,6 +11,7 @@ $(document).ready(function(){
       if($('#newGenre').val() != ""){
         addGenre = $('#newGenre').val();
         updateGenreList(addGenre);
+        addGenre = "";
       }
     });
   });
@@ -19,8 +20,11 @@ $(document).ready(function(){
     $('#addGenreForm').slideUp();
     $('#deleteGenreForm').slideToggle();
     $('#submitDeleteGenre').click(function(){
-      deleteGenre = $('#genreToDelete').val();
-      deleteGenreFromList(deleteGenre);
+      if($('#genreToDelete').val() != ""){
+        deleteGenre = $('#genreToDelete').val();
+        deleteGenreFromList(deleteGenre);
+        deleteGenre = "";
+      }
     });
   });
 });
