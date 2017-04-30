@@ -32,7 +32,7 @@ $(document).ready(function(){
     }
 
     validate();
-    $('#inputName, #inputEmail, #inputTel').change(validate);
+    $('#vidTitle, #vidLink').change(validate);
 
   });
 
