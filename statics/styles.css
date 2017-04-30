@@ -23,6 +23,7 @@ h2{
 
 h3{
   margin-top: 2%;
+
   font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
   color: black;
@@ -34,7 +35,7 @@ body{
 }
 
 .shadow{
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 5px 5px 3px #888888;
 }
 
 .btnInline{
