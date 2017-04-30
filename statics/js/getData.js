@@ -120,7 +120,7 @@ function clearVideos(){
 
 function clearDD(){
   $('#genreDD').text('');
-  $('#genreDD').append("<option disabled selected value=''>Choose A Genre...</option>");
+  $('#genreDD').append("<option disabled selected value='0'>Choose A Genre...</option>");
   $('#genreFilterDD').text('');
   $('#genreFilterDD').append("<option disabled selected value=''>Filter by a specific genre</option>");
 }
@@ -131,7 +131,7 @@ function populateDropDowns(genre){
 }
 
 function validateNewVideoForm(){
-  if($('#vidTitle').val() == '' || $('#vidLink').val() == '' || $('#genreDD').index == 0){
+  if($('#vidTitle').val() == '' || $('#vidLink').val() == '' || $('#genreDD').val() == 0){
     return 1;
   } else {
     return 0;
