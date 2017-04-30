@@ -13,7 +13,6 @@ $(document).ready(function(){
   });
 
   $('#addVideo').click(function(){
-    clearDD('#genreDD');
     clearDD('#genreFilterDD');
     getVideoGenres();
     $('#videoArea').slideUp();
