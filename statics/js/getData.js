@@ -5,8 +5,8 @@ $(document).ready(function(){
   $('#videoArea').fadeIn("slow");
 
   $('#showVideos').click(function(){
-    clearVideos();
-    getAllVideoData();
+    // clearVideos();
+    // getAllVideoData();
     $('#addVideoForm').hide();
     $('#videoArea').fadeToggle("slow");
   });
