@@ -11,61 +11,59 @@
   <body>
     <?php if(isset($_SESSION['loggedin'])){ ?>
       <div class="container">
-        <div class="jumbotron">
-          <h1 class="text-center">Double H Music Video Player</h1>
-          <hr>
-          <!-- TDOD: Make navbar not shit -->
-          <div id="navBar" class="text-center form-inline">
-            <input type="button" class="btn btn-lg btn-danger" id="showVideos" value="Show/Hide Videos">
-            <input type="button" class="btn btn-lg btn-warning" id="addVideo" value="Add Video">
-            <input type="button" class="btn btn-lg btn-success" id="adminPage" value="Administration" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/views/adminPortal.php'">
-            <input type="button" class="btn btn-lg btn-info" value="Logout" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/statics/php/logout.php'">
-          </div>
-          <hr>
-          <!-- Add Video Form -->
-          <div id="addVideoForm" class="form-group">
-            <div class="row">
-              <div class="col-md-4 col-md-offset-4">
-                <input type="text" id="vidTitle" class="form-control" placeholder="Video Title"><br>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4 col-md-offset-4">
-                <input type="text" id="vidLink" class="form-control" placeholder="YouTube Link"><br>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4 col-md-offset-4">
-                <select id="genreDD" class="form-control">
-                  <option disabled selected>Choose a Genre</option>
-                </select><br>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4 col-md-offset-4">
-                <input type="button" id="addVidBtn" class="btn btn-primary btn-block" value="Submit">
-              </div>
+        <h1 class="text-center">Double H Music Video Player</h1>
+        <hr>
+        <!-- TDOD: Make navbar not shit -->
+        <div id="navBar" class="text-center form-inline">
+          <input type="button" class="btn btn-lg btn-danger" id="showVideos" value="Show/Hide Videos">
+          <input type="button" class="btn btn-lg btn-warning" id="addVideo" value="Add Video">
+          <input type="button" class="btn btn-lg btn-success" id="adminPage" value="Administration" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/views/adminPortal.php'">
+          <input type="button" class="btn btn-lg btn-info" value="Logout" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/statics/php/logout.php'">
+        </div>
+        <hr>
+        <!-- Add Video Form -->
+        <div id="addVideoForm" class="form-group">
+          <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <input type="text" id="vidTitle" class="form-control" placeholder="Video Title"><br>
             </div>
           </div>
-          <!-- Show All Videos -->
-          <div id="videoArea" class="text-center">
-            <div class="row">
-              <div class="col-md-4 col-md-offset-3">
-                <select id="genreFilterDD" class="form-control">
-                  <option disabled selected>Choose a Genre</option>
-                </select>
-              </div>
-              <div class="col-md-2">
-                <input type="button" id="resetFilterBtn" class="btn btn-primary btn-block" value="Reset">
-              </div>
+          <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <input type="text" id="vidLink" class="form-control" placeholder="YouTube Link"><br>
             </div>
-            <div class="row">
-              <div id="videoDiv" class="text-center">
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <select id="genreDD" class="form-control">
+                <option disabled selected>Choose a Genre</option>
+              </select><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <input type="button" id="addVidBtn" class="btn btn-primary btn-block" value="Submit">
+            </div>
+          </div>
+        </div>
+        <!-- Show All Videos -->
+        <div id="videoArea" class="text-center">
+          <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+              <select id="genreFilterDD" class="form-control">
+                <option disabled selected>Choose a Genre</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <input type="button" id="resetFilterBtn" class="btn btn-primary btn-block" value="Reset">
+            </div>
+          </div>
+          <div class="row">
+            <div id="videoDiv" class="text-center">
 
-              </div>
             </div>
           </div>
-      </div>
+        </div>
       <?php } else {
         header("Location: http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/");
       } ?>
