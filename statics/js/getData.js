@@ -20,6 +20,7 @@ $(document).ready(function(){
       submitVideo();
       clearVideos();
       getVideoGenres();
+      getAllVideoData();
       $('#addVideoForm').slideUp();
       $('#videoArea').fadeIn("slow");
     } else {
