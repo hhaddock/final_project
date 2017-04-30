@@ -3,5 +3,8 @@ $(document).ready(function(){
 
   $('#addGenre').click(function(){
     $('#addGenreForm').slideToggle();
+    $('#submitNewGenre').click(function(){
+      console.log($('#newGenre').val());
+    });
   });
 });

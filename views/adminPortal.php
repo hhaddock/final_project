@@ -25,8 +25,8 @@
           </div>
         </div>
         <div id="addGenreForm" class="form-group">
-          <input type="text" class="form-control" placeholder="Enter Genre Here">
-          <input type="button" class="btn btn-success" value="Add Genre">
+          <input type="text" id="newGenre" class="form-control" placeholder="Enter Genre Here">
+          <input type="button" id="submitNewGenre" class="btn btn-success" value="Add Genre">
         </div>
       </div>
     </div>
