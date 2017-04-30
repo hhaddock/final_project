@@ -5,6 +5,7 @@ $(document).ready(function(){
   $('#addVideoForm').hide();
 
   $('#showVideos').click(function(){
+    getVideoGenres();
     clearVideos();
     getAllVideoData();
     $('#addVideoForm').slideUp();
