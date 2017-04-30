@@ -105,14 +105,14 @@ function filterVideos(songGenre){
 }
 
 function formatVideos(title, id){
-  vid = "https://www.youtube.com/embed/";
   pic = "http://img.youtube.com/vi/"
   // $('#videoDiv').append("<br><div class='box paperTexture'><h2>"+title+"</h2><hr><iframe width='560' height='315' src='"+vid + id+"' frameborder='0' allowfullscreen></iframe><br><br></div>");
   $('#videoDiv').append("<br><div class='box paperTexture'><h2>"+title+"</h2><hr><img id='"+id+"' onclick='playVideo(id)' src='"+pic + id+"/0.jpg' alt='Error: video could not load'></img><br><br></div>");
 }
 
 function playVideo(id){
-  $('#'+id).replaceWith('<p>This is a test</p>');
+  vid = "https://www.youtube.com/embed/";
+  $('#'+id).replaceWith("<iframe width='560' height='315' src='"+vid + id+"' frameborder='0' allowfullscreen></iframe>");
   // console.log("#"+id);
 }
 
