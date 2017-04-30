@@ -60,7 +60,6 @@ body{
 }
 
 .paperTexture{
-  opacity: 0.8;
   background-image: url(../assets/paperTexture.png);
   border-radius: 3px;
 }
