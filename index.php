@@ -26,12 +26,14 @@
             </div>
           </div>
 
-          <?php if(isset($_POST['username'])){
-            $user = htmlspecialchars($_POST['username']);
-            $pass = htmlspecialchars($_POST['password']);
-
-            echo userLogin($user, $pass);
-          } ?>
+          <?php
+            include 'statics/php/login.php';
+            if(isset($_POST['username'])){
+              $user = htmlspecialchars($_POST['username']);
+              $pass = htmlspecialchars($_POST['password']);
+              echo userLogin($user, $pass);
+            }
+          ?>
 
           <div class="row">
             <div class="col-md-4 col-md-offset-4">
