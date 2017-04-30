@@ -16,7 +16,7 @@
         <hr>
         <div class="form-inline">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-md-offset-1">
               <input type="button" id="addGenre" class="btn btn-warning btn-block" value="Add A Genre">
             </div>
             <div class="col-md-3">
