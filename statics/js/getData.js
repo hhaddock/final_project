@@ -14,6 +14,7 @@ $(document).ready(function(){
   });
 
   $('#addVideo').click(function(){
+    getAllVideoData();
     $('#videoArea').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
