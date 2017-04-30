@@ -111,7 +111,7 @@ function filterVideos(songGenre){
 function formatVideos(title, id){
   vid = "https://www.youtube.com/embed/";
   // $('#videoDiv').append("<br><div class='box paperTexture'><h2>"+title+"</h2><hr><iframe width='560' height='315' src='"+vid + id+"' frameborder='0' allowfullscreen></iframe><br><br></div>");
-  $('#videoDiv').append('<div class="youtube" id="'+id+'" style="width: 320px; height: 180px;"></div><script src="https://labnol.googlecode.com/files/youtube.js"></script>');
+  $('#videoDiv').append('<div class="lyte" id="gnDh6PqWqD8" style="width:480;height:385;"><noscript><a href="http://youtu.be/gnDh6PqWqD8">Watch on YouTube</a></noscript><script>(function(){d=document;if(!document.getElementById("lytescr")){lyte=d.createElement("script");lyte.async=true;lyte.id="lytescr";lyte.src="http://futtta.be/lyte/lyte.js";d.getElementsByTagName("head")[0].appendChild(lyte)}})();</script></div>');
 }
 
 function clearVideos(){
