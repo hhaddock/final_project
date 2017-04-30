@@ -2,6 +2,7 @@ $(document).ready(function(){
   //hide forms
   $('#addGenreForm').hide();
   $('#deleteGenreForm').hide();
+  $('#deleteVideoForm').hide();
 
   //click function for
   $('#addGenre').click(function(){
