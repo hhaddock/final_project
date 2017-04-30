@@ -56,7 +56,7 @@
                   <option disabled selected>Choose a Genre</option>
                 </select>
               </div>
-              <div class="col-lg-4 col-lg-offset-1">
+              <div class="col-lg-4">
                 <input type="button" id="resetFilterBtn" class="btn btn-primary" value="Reset">
               </div>
             </div>
