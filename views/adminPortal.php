@@ -45,8 +45,8 @@
           <div class="col-md-4">
             <div id="deleteVideoForm" class="form-group">
               <br>
-              <input type="text" id="" class="form-control" placeholder="Enter Video Title"><br>
-              <input type="button" id="" class="btn btn-warning" value="Delete Video">
+              <input type="text" id="videoTitle" class="form-control" placeholder="Enter Video Title"><br>
+              <input type="button" id="videoDelete" class="btn btn-warning" value="Delete Video">
             </div>
           </div>
           <hr>

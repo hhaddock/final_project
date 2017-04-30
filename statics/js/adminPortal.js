@@ -35,6 +35,13 @@ $(document).ready(function(){
     $('#addGenreForm').slideUp();
     $('#deleteGenreForm').slideUp();
     $('#deleteVideoForm').slideToggle();
+    $('#videoDelete').click(function(){
+      if($('#videoTitle').val() != ''){
+        deleteVideo = $('#videoTitle').val();
+        deleteVideoFromList(deleteVideo);
+        $('#videoTitle').val('');
+      }
+    });
   });
 });
 
@@ -68,6 +75,29 @@ function deleteGenreFromList(deleteGenre){
             success: function(res){
               console.log(res);
               $('#messageText').html(genreString + " has been deleted");
+            }
+          });
+        }
+      }
+    }
+  });
+}
+
+function deleteVideoFromList(video){
+  $.ajax({
+    url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/videos",
+    type: "get",
+    dataType: "json",
+    success: function(res){
+      for(i = 0; i < res.length; i++){
+        if(res[i].title == video){
+          videoString = res[i].title;
+          $.ajax({
+            url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/videos/"+ res[i]._id,
+            type: "delete",
+            dataType: "json",
+            success: function(res){
+              $('#messageText').html(videoString + " has been deleted");  
             }
           });
         }
