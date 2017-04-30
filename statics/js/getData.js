@@ -8,12 +8,12 @@ $(document).ready(function(){
     $('#vidTitle').val('');
     $('#vidLink').val('');
     clearDD();
+    getVideoGenres();
     $('#addVideoForm').hide();
     $('#videoArea').fadeToggle("slow");
   });
 
   $('#addVideo').click(function(){
-    getVideoGenres();
     $('#videoArea').hide();
     $('#addVideoForm').fadeIn("slow");
   });
