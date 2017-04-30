@@ -3,6 +3,10 @@ iframe{
   box-shadow: 5px 5px 5px #262626;
 }
 
+h1{
+  font-family: 'Pacifico', cursive;
+}
+
 body{
   background-color: #262626;
   color: #bfbfbf;
