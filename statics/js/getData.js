@@ -13,14 +13,12 @@ $(document).ready(function(){
   });
 
   $('#addVideo').click(function(){
-    clearDD('#genreDD');
     getVideoGenres();
     $('#videoArea').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
 
   $('#addVidBtn').click(function(){
-    clearDD('#genreFilterDD');
     submitVideo();
     clearVideos();
     getAllVideoData();
@@ -37,6 +35,7 @@ function getAllVideoData(){
     success: function(res){
       for(i = 0; i < res.length; i++){
         formatVideos(res[i].title, res[i].videoID);
+        clearDD('#genreFilterDD');
         populateDD(res[i].genre, '#genreFilterDD');
       }
     }
