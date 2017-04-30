@@ -20,7 +20,9 @@ $(document).ready(function(){
   $('#addVidBtn').click(function(){
     submitVideo();
     clearVideos();
+    clearDD();
     getAllVideoData();
+    getVideoGenres();
     $('#addVideoForm').slideUp();
     $('#videoArea').slideToggle("slow");
   });
