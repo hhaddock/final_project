@@ -39,7 +39,7 @@
             <div class="row">
               <div class="col-md-4 col-md-offset-4">
                 <select id="genreDD" class="form-control" disabled>
-                  <option disabled selected>Choose a Genre</option>
+                  <option disabled selected>Choose a Genre...</option>
                 </select><br>
               </div>
             </div>
