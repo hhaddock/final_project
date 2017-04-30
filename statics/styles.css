@@ -26,6 +26,10 @@ body{
   color: #bfbfbf;
 }
 
+.shadow{
+  box-shadow: 10px 10px 5px #888888;
+}
+
 .btnInline{
   width: 10em;
 }
