@@ -138,15 +138,11 @@ function populateDropDowns(genre){
 
 function validateNewVideoForm(){
   if($('#vidTitle').val() == '' || $('#vidLink').val() == ''){
-  //   if($('#genreDD').val() == 'none')
-  //   {
-  //     alert("yay!");
-  //   }
-  //   return 1;
-  // } else {
-  //   return 0;
+    if($('#genreDD').val() == 'Choose A Genre...'){
+      return 1;
+    } else {
+    return 0;
   }
-  console.log($('#genreDD :selected').text());
 }
 
 function validate(){
