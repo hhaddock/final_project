@@ -8,13 +8,17 @@ $(document).ready(function(){
     $('#deleteGenreForm').slideUp();
     $('#addGenreForm').slideToggle();
     $('#submitNewGenre').click(function(){
-      if($('#newGenre').val() != ""){
-        addGenre = $('#newGenre').val();
-        updateGenreList(addGenre);
-        addGenre = "";
-      }  else {
-        alert("Error: you must enter a genre to delete");
-      }
+      // if($('#newGenre').val() != ""){
+      //   addGenre = $('#newGenre').val();
+      //   updateGenreList(addGenre);
+      //   addGenre = "";
+      // }  else {
+      //   alert("Error: you must enter a genre to delete");
+      // }
+
+      addGenre = $('#newGenre').val();
+      updateGenreList(addGenre);
+      addGenre = "";
     });
   });
 
