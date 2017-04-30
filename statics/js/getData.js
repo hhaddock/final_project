@@ -5,6 +5,7 @@ $(document).ready(function(){
   $('#addVideoForm').hide();
 
   $('#showVideos').click(function(){
+    clearDD();
     getVideoGenres();
     clearVideos();
     getAllVideoData();
@@ -13,6 +14,8 @@ $(document).ready(function(){
   });
 
   $('#addVideo').click(function(){
+    clearDD();
+    getVideoGenres();
     $('#videoArea').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
