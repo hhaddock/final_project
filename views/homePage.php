@@ -26,7 +26,6 @@
           <!-- Add Video Form -->
           <div id="addVideoForm" class="form-group">
             <div class="row">
-              <br>
               <div class="col-md-4 col-md-offset-4">
                 <input type="text" id="vidTitle" class="form-control" placeholder="Video Title"><br>
               </div>
