@@ -63,7 +63,7 @@
             </div>
             <div class="row">
               <div class="col-md-6 col-md-offset-3">
-                <div id="videoDiv" class="changeWidth form-group">
+                <div id="videoDiv" class="form-group">
 
                 </div>
               </div>
