@@ -1,5 +1,7 @@
 footer{
-
+  position:relative;
+  left: 50%;
+  margin-top:50%;
 }
 
 iframe{
