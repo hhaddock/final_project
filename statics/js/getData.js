@@ -3,6 +3,8 @@
 $(document).ready(function(){
   $('#videoArea').hide();
   $('#addVideoForm').hide();
+  clearDD();
+  getVideoGenres();
 
   $('#showVideos').click(function(){
     clearDD();
