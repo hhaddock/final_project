@@ -62,7 +62,7 @@
             </div>
           </div>
           <div class="row">
-            <div id="videoDiv" class="text-center">
+            <div id="videoDiv" class="form-inline">
 
             </div>
           </div>
