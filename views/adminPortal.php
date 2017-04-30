@@ -45,8 +45,8 @@
           <div class="col-md-3 col-md-push-3">
             <div id="deleteVideoForm" class="form-group">
               <br>
-              <input type="text" id="" class="form-control" placeholder="Enter Genre Here"><br>
-              <input type="button" id="" class="btn btn-primary" value="Delete Genre">
+              <input type="text" id="" class="form-control" placeholder="Enter Video Title"><br>
+              <input type="button" id="" class="btn btn-secondary" value="Delete Video">
             </div>
           </div>
           <hr>
