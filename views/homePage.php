@@ -9,7 +9,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="../statics/js/getData.js"></script>
   </head>
-  <body>
+  <body class="bgGif">
     <?php if(isset($_SESSION['loggedin'])){ ?>
         <div class="container">
           <h1 class="textShadow text-center titleText">Double H Music Video Player</h1>
