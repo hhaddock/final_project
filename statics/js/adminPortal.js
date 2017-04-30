@@ -51,7 +51,7 @@ function deleteGenreFromList(deleteGenre){
             type: "delete",
             dataType: "json",
             success: function(res){
-              console.log(res.genre + " Has been deleted");
+              console.log(res + " Has been deleted");
             }
           });
         }
