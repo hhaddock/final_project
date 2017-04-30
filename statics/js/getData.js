@@ -5,10 +5,10 @@ $(document).ready(function(){
   $('#addVideoForm').hide();
 
   $('#showVideos').click(function(){
-    clearDD('#genreFilterDD');
     clearVideos();
     getAllVideoData();
     $('#addVideoForm').slideUp();
+    clearDD('#genreFilterDD');
     $('#videoArea').slideToggle("slow");
   });
 
