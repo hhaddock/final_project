@@ -77,7 +77,7 @@ function submitVideo(){
   });
 }
 
-function filterVideos(genre){
+function filterVideos(songGenre){
   clearVideos();
   $.ajax({
     url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/videos",
@@ -85,7 +85,7 @@ function filterVideos(genre){
     dataType: 'json',
     success: function(res){
       for(i = 0; i < res.length; i ++){
-        if(res[i].genre == video){
+        if(res[i].genre == songGenre){
           formatVideos(res[i].title, res[i].videoID);
         }
       }
