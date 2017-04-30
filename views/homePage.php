@@ -38,7 +38,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-md-offset-4">
-                <select id="genreDD" class="required" disabled>
+                <select id="genreDD" class="form-control" disabled>
                   <option disabled selected>Choose a Genre</option>
                 </select><br>
               </div>
