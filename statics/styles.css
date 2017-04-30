@@ -120,8 +120,6 @@ body{
 .videoBg {
   position:relative;
   z-index: 0;
-  left:0;
-  top:0;
 }
 .videoFg {
   position:absolute;
