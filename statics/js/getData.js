@@ -4,7 +4,8 @@ $(document).ready(function(){
   $('#videoArea').hide();
   $('#addVideoForm').hide();
 
-  $('#showVideos').click(function(){
+  $('#showVideos').click(function(){\
+    clearDD('#genreDD');
     clearVideos();
     getAllVideoData();
     getVideoGenres();
@@ -23,6 +24,7 @@ $(document).ready(function(){
     submitVideo();
     clearVideos();
     getAllVideoData();
+    getVideoGenres();
     $('#addVideoForm').slideUp();
     $('#videoArea').slideToggle("slow");
   });
