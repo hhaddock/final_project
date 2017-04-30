@@ -84,6 +84,7 @@ function submitVideo(){
     dataType: 'json',
     data: {title: title, videoID: secret[1], genre: genre},
     success: function(res){
+      clearVideos();
       getAllVideoData();
       title = "";
       vidLink = "";
