@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('#addGenre').click(function(){
     $('#addGenreForm').slideToggle();
     $('#submitNewGenre').click(function(){
-      if($('#newGenre').val() != null){
+      if($('#newGenre').val() != ""){
         console.log("Test worked");
       }
       // addGenre = $('#newGenre').val();
