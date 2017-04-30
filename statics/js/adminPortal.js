@@ -29,7 +29,7 @@ $(document).ready(function(){
       if($('#genreToDelete').val() != ""){
         deleteGenre = $('#genreToDelete').val();
         deleteGenreFromList(deleteGenre);
-        deleteGenre = "";
+        $('#genreToDelete').val('');
       } else {
         alert("Error: you must enter a genre to delete");
       }
@@ -45,7 +45,8 @@ function updateGenreList(newGenre){
     dataType: "json",
     data: {genre: newGenre},
     success: function(res){
-      console.log("Updated List of genres with "+ newGenre);
+      //console.log("Updated List of genres with "+ newGenre);
+      $('#messageText').html("Updated list of genres with "+ newGenre);
     }
   });
 }
@@ -63,7 +64,8 @@ function deleteGenreFromList(deleteGenre){
             type: "delete",
             dataType: "json",
             success: function(res){
-              console.log(res + " Has been deleted");
+              //console.log(res + " Has been deleted");
+              $('#messageText').html(res + " has been deleted");
             }
           });
         }

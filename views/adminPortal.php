@@ -43,6 +43,12 @@
             </div>
           </div>
         </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12">
+            <h3 id="messageText"></h3>
+          </div>
+        </div>
       </div>
     </div>
   </body>
