@@ -23,6 +23,8 @@ $(document).ready(function(){
   $('#addVidBtn').click(function(){
     submitVideo();
     clearVideos();
+    clearDD('#genreFilterDD');
+    clearDD('#genreDD');
     getAllVideoData();
     getVideoGenres();
     $('#addVideoForm').slideUp();
