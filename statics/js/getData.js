@@ -5,6 +5,8 @@ $(document).ready(function(){
   $('#videoArea').fadeIn("slow");
 
   $('#showVideos').click(function(){
+    $('#vidTitle').val('');
+    $('#vidLink').val('');
     $('#addVideoForm').hide();
     $('#videoArea').fadeToggle("slow");
   });
