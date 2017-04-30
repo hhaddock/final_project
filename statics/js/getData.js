@@ -7,8 +7,8 @@ $(document).ready(function(){
   $('#showVideos').click(function(){
     $('#vidTitle').val('');
     $('#vidLink').val('');
-    // clearDD();
-    // getVideoGenres();
+    clearDD();
+    getVideoGenres();
     $('#addVideoForm').hide();
     $('#videoArea').fadeToggle("slow");
   });
@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   $('#addVidBtn').click(function(){
     submit = validateNewVideoForm();
-    if(submit == 0){
+    if(submit == 1){
       submitVideo();
       clearVideos();
       getAllVideoData();
