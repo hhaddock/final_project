@@ -120,9 +120,9 @@ function clearVideos(){
 
 function clearDD(){
   $('#genreDD').text('');
-  $('#genreDD').append("<option disabled selected>Choose A Genre...</option>");
+  $('#genreDD').append("<option disabled selected value=''>Choose A Genre...</option>");
   $('#genreFilterDD').text('');
-  $('#genreFilterDD').append("<option disabled selected>Filter by a specific genre</option>");
+  $('#genreFilterDD').append("<option disabled selected value=''>Filter by a specific genre</option>");
 }
 
 function populateDropDowns(genre){
