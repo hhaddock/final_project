@@ -30,6 +30,12 @@ $(document).ready(function(){
     } else {
       alert("Error: all form elements must be filled out.");
     }
+
+    $('#genreDD').click(function(){
+      if($('#vidTitle').val() != '' && $('#vidLink').val() != ''){
+        $('#genreDD').removeAtt('disabled');
+      }
+    });
   });
 
   $('#resetFilterBtn').click(function(){
