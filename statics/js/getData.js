@@ -14,7 +14,6 @@ $(document).ready(function(){
   });
 
   $('#addVideo').click(function(){
-    getAllVideoData();
     $('#videoArea').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
@@ -45,6 +44,7 @@ function getAllVideoData(){
     type: 'get',
     dataType: 'json',
     success: function(res){
+      clearDD();
       for(i = 0; i < res.length; i++){
         formatVideos(res[i].title, res[i].videoID);
       }
