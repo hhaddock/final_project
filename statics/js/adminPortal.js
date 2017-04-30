@@ -59,13 +59,14 @@ function deleteGenreFromList(deleteGenre){
     success: function(res){
       for(i = 0; i < res.length; i++){
         if(res[i].genre == deleteGenre){
+          genreString = res[i].genre;
           $.ajax({
             url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/genres/"+ res[i]._id,
             type: "delete",
             dataType: "json",
             success: function(res){
               console.log(res);
-              $('#messageText').html(res.genre + " has been deleted");
+              $('#messageText').html(genreString + " has been deleted");
             }
           });
         }
