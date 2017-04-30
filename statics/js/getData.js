@@ -25,6 +25,10 @@ $(document).ready(function(){
     $('#addVideoForm').slideUp();
     $('#videoArea').slideToggle("slow");
   });
+
+  $('#genreFilterDD').on('change',function(){
+    console.log($('#genreFilterDD').val());
+  });
 });
 
 function getAllVideoData(){
