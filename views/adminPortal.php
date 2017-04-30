@@ -46,7 +46,7 @@
             <div id="deleteVideoForm" class="form-group">
               <br>
               <input type="text" id="" class="form-control" placeholder="Enter Video Title"><br>
-              <input type="button" id="" class="btn btn-seconday" value="Delete Video">
+              <input type="button" id="" class="btn btn-warning" value="Delete Video">
             </div>
           </div>
           <hr>
@@ -61,7 +61,7 @@
   <footer>
     <div class="row">
       <div class="col-md-4 col-md-offset-4">
-        <input type="button" class="btn btn-info btn-block" value="Go Back" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/views/homePage.php'">
+        <input type="button" class="btn btn-success btn-block" value="Go Back" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/views/homePage.php'">
       </div>
     </div>
   </footer>
