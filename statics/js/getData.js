@@ -7,7 +7,7 @@ $(document).ready(function(){
   $('#showVideos').click(function(){
     $('#vidTitle').val('');
     $('#vidLink').val('');
-    $('#genreDD').val('<option disabled selected value='none'>Choose A Genre...</option>')
+    $('#genreDD').val('<option disabled selected value='none'>Choose A Genre...</option>'));
     $('#addVideoForm').hide();
     $('#videoArea').fadeToggle("slow");
   });
