@@ -58,7 +58,7 @@
                 <option disabled selected>Filter by a specific genre</option>
               </select>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-4">
               <input type="button" id="resetFilterBtn" class="btn btn-primary btn-block" value="Reset">
             </div>
           </div>
