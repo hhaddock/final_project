@@ -5,7 +5,7 @@ $(document).ready(function(){
 
   //click function for
   $('#addGenre').click(function(){
-    $('#deleteGenreForm').hide();
+    $('#deleteGenreForm').slideUp();
     $('#addGenreForm').slideToggle();
     $('#submitNewGenre').click(function(){
       if($('#newGenre').val() != ""){
@@ -16,7 +16,7 @@ $(document).ready(function(){
   });
 
   $('#deleteVideo').click(function(){
-    $('#addGenreForm').hide();
+    $('#addGenreForm').slideUp();
     $('#deleteGenreForm').slideToggle();
     $('#submitDeleteGenre').click(function(){
       deleteGenre = $('#genreToDelete').val();
