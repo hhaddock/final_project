@@ -29,7 +29,7 @@ $(document).ready(function(){
   $('#genreFilterDD').on('change',function(){
     videos = $('#genreFilterDD').val()
     console.log(videos);
-    filterVideos();
+    filterVideos(videos);
   });
 });
 
@@ -78,8 +78,18 @@ function submitVideo(){
   });
 }
 
-function filterVideos(){
-  
+function filterVideos(video){
+  clearVideos();
+  $.ajax({
+    url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/videos",
+    type: 'get',
+    dataType: 'json',
+    success: function(res){
+      if(res[i].genre == video){
+        formatVideos(res[i].title, res[i].videoID);
+      }
+    }
+  });
 }
 
 function formatVideos(title, id){
