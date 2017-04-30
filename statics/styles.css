@@ -50,14 +50,19 @@ body{
 }
 
 .center-div{
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 55%;
-  height: 40%;
+  width: 200px;
+  height: 600px;
+  background-color: blue;
+
+  position:absolute; /*it can be fixed too*/
+  left:0; right:0;
+  top:0; bottom:0;
+  margin:auto;
+
+  /*this to solve "the content will not be cut when the window is smaller than the content": */
+  max-width:100%;
+  max-height:100%;
+  overflow:auto;
 }
 
 .paperTexture{
