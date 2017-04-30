@@ -7,6 +7,7 @@ $(document).ready(function(){
   //click function for
   $('#addGenre').click(function(){
     $('#deleteGenreForm').slideUp();
+    $('#deleteVideoForm').slideUp();
     $('#addGenreForm').slideToggle();
     $('#submitNewGenre').click(function(){
       addGenre = $('#newGenre').val();
@@ -17,6 +18,7 @@ $(document).ready(function(){
 
   $('#deleteGenre').click(function(){
     $('#addGenreForm').slideUp();
+    $('#deleteVideoForm').slideUp();
     $('#deleteGenreForm').slideToggle();
     $('#submitDeleteGenre').click(function(){
       if($('#genreToDelete').val() != ""){
@@ -30,6 +32,8 @@ $(document).ready(function(){
   });
 
   $('#deleteVideo').click(function(){
+    $('#addGenreForm').slideUp();
+    $('#deleteGenreForm').slideUp();
     $('#deleteVideoForm').slideToggle();
   });
 });
