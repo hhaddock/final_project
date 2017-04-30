@@ -112,7 +112,7 @@ function formatVideos(title, id){
   $('#videoDiv').append("<br><div class='box paperTexture'><h2>"+title+"</h2><hr><div><img class='videoBg' width='560' height='315' src='"+pic + id+"/0.jpg' alt='Error: video could not load'></img><img id='"+id+"' src='../assets/playButton.png' alt='Error' width='50px' height='35px' class='videoFg' onclick='"+play+"'></img</div><br><br></div>");
 }
 
-function playVideo(title, id){
+function playVideo(id){
   // vid = "https://www.youtube.com/embed/";
   // $('#'+id).replaceWith("<iframe width='560' height='315' src='"+vid + id+"' frameborder='0' allowfullscreen></iframe>");
   console.log(id);
