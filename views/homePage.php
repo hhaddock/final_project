@@ -17,7 +17,7 @@
         <!-- TDOD: Make navbar not shit -->
         <div id="navBar" class="text-center form-inline">
           <div class="btn-group">
-            <input type="button" class="btn btn-lg btn-danger" id="showVideos" value="Show/Hide Videos">
+            <input type="button" class="btn btn-lg btn-danger btn-block" id="showVideos" value="Show/Hide Videos">
             <input type="button" class="btn btn-lg btn-warning" id="addVideo" value="Add Video">
             <input type="button" class="btn btn-lg btn-success" id="adminPage" value="Administration" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/views/adminPortal.php'">
             <input type="button" class="btn btn-lg btn-info" value="Logout" onclick="location.href='http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/statics/php/logout.php'">
