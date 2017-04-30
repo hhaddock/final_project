@@ -16,9 +16,9 @@ $(document).ready(function(){
       //   alert("Error: you must enter a genre to delete");
       // }
 
-      addGenre = $('#newGenre').text();
+      addGenre = $('#newGenre').val();
       updateGenreList(addGenre);
-      $('#newGenre').text('');
+      $('#newGenre').val('');
     });
   });
 
