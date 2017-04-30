@@ -36,7 +36,7 @@ function getAllVideoData(){
       for(i = 0; i < res.length; i++){
         formatVideos(res[i].title, res[i].videoID);
         clearDD('#genreFilterDD');
-        populateDD(res[i].genre, '#genreFilterDD');
+        populateDD(res[i].genre,res[i].id, '#genreFilterDD');
       }
     }
   });
@@ -49,7 +49,7 @@ function getVideoGenres(){
     success: function(res){
       console.log(res);
       for(i = 0; i < res.length; i ++){
-        populateDD(res[i].genre, res[i].id, '#genreDD');
+        populateDD(res[i].genre, '#genreDD');
       }
     }
   });
