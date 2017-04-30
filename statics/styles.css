@@ -118,7 +118,7 @@ body{
   height: 16px;
 }
 .videoBg{
-  z-index: auto;
+  z-index: -1;
 }
 
 .videoFg{
