@@ -10,7 +10,7 @@
     <script type="text/javascript" src="statics/js/formValidation.js"></script>
   </head>
   <body class="bgGif">
-    <div class="box paperTexture center-div container">
+    <div class="box">
       <h1 class="text-center titleText textShadow">Welcome To Hayden's Playlist App</h1>
       <hr><br>
       <div class="text-center">
