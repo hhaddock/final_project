@@ -13,6 +13,7 @@ $(document).ready(function(){
   });
 
   $('#addVideo').click(function(){
+    getVideoGenres();
     $('#videoArea').hide();
     $('#addVideoForm').fadeIn("slow");
   });
