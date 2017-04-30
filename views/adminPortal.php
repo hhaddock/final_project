@@ -38,8 +38,8 @@
           <div class="col-md-3 col-md-push-2">
             <div id="deleteGenreForm" class="form-group">
               <br>
-              <input type="text" id="newGenre" class="form-control" placeholder="Enter Genre Here"><br>
-              <input type="button" id="submitNewGenre" class="btn btn-success" value="Add Genre">
+              <input type="text" id="genreToDelete" class="form-control" placeholder="Enter Genre Here"><br>
+              <input type="button" id="submitDeleteGenre" class="btn btn-success" value="Add Genre">
             </div>
           </div>
         </div>

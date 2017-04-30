@@ -5,12 +5,22 @@ $(document).ready(function(){
 
   //click function for
   $('#addGenre').click(function(){
+    $('#deleteGenreForm').hide();
     $('#addGenreForm').slideToggle();
     $('#submitNewGenre').click(function(){
       if($('#newGenre').val() != ""){
         addGenre = $('#newGenre').val();
         updateGenreList(addGenre);
       }
+    });
+  });
+
+  $('#deleteVideo').click(function(){
+    $('#addGenreForm').hide();
+    $('#deleteGenreForm').slideToggle();
+    $('#submitDeleteGenre').click(function(){
+      deleteGenre = $('#genreToDelete').val();
+      deleteGenreFromList(deleteGenre);
     });
   });
 });
@@ -24,6 +34,17 @@ function updateGenreList(newGenre){
     data: {genre: newGenre},
     success: function(res){
       console.log("Updated List of genres with "+ newGenre);
+    }
+  });
+}
+
+function deleteGenreFromList(deleteGenre){
+  $.ajax({
+    url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/genres",
+    type: "get",
+    dataType: "json",
+    success: function(res){
+      console.log(res);
     }
   });
 }
