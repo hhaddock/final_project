@@ -106,9 +106,9 @@ function filterVideos(songGenre){
 
 function formatVideos(title, id){
   vid = "https://www.youtube.com/embed/";
-  pic = "https://img.youtube.com/vi/"
+  pic = "http://img.youtube.com/vi/"
   // $('#videoDiv').append("<br><div class='box paperTexture'><h2>"+title+"</h2><hr><iframe width='560' height='315' src='"+vid + id+"' frameborder='0' allowfullscreen></iframe><br><br></div>");
-  $('#videoDiv').append("<br><div class='box paperTexture'><h2>"+title+"</h2><hr><img href='"+pic + id+"/0.jpg' alt='Error :('></img><br><br></div>");
+  $('#videoDiv').append("<br><div class='box paperTexture'><h2>"+title+"</h2><hr><img href='"+pic + id+"/maxresdefault.jpg' alt='Error :('></img><br><br></div>");
 }
 
 function clearVideos(){
