@@ -18,7 +18,7 @@ $(document).ready(function(){
         getAllVideoData();
         $('#videoArea').hide();
         $('#addVideoForm').fadeIn("slow");
-      }, 5000);
+      }, 100);
   });
 
   $('#addVidBtn').click(function(){
