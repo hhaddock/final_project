@@ -112,7 +112,7 @@ function formatVideos(title, id){
 
 function playVideo(title, id){
   vid = "https://www.youtube.com/embed/";
-  $('.'+ id).replaceWith("<iframe width='560' height='315' src='"+vid + id+"?autoplay=1' frameborder='0' allowfullscreen></iframe>");
+  $('.vid').replaceWith("<iframe width='560' height='315' src='"+vid + id+"?autoplay=1' frameborder='0' allowfullscreen></iframe>");
   // console.log("#"+id);
 }
 
