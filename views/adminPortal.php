@@ -12,7 +12,7 @@
   </head>
   <body class="bgGif">
     <div class="container">
-        <h1 class="text-center">Music Video Player Admin Portal</h1>
+        <h1 class="text-center titleText textShadow">Music Video Player Admin Portal</h1>
         <hr>
         <div class="form-inline">
           <div class="row">
