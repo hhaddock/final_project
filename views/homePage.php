@@ -52,12 +52,10 @@
           <div id="videoArea" class="text-center">
             <div class="row">
               <div class="col-lg-4 col-lg-offset-4">
-                <div class="form-inline">
-                  <select width="500px" id="genreFilterDD" class="form-control">
+                  <selectid="genreFilterDD" class="form-control">
                     <option disabled selected>Choose a Genre</option>
                   </select>
                   <input type="button" id="resetFilterBtn" class="btn btn-primary" value="Reset">
-                </div>
               </div>
             </div>
             <div class="row">
