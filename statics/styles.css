@@ -1,10 +1,10 @@
 iframe{
   border-radius: 5px;
-  box-shadow: 5px 5px 5px #eeeeee;
+  box-shadow: 5px 5px 5px #262626;
 }
 
 body{
-  background-color: #262626;
+  background-color: #3498db;
 }
 
 .hidden{
