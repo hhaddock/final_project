@@ -62,7 +62,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 text-center">
+              <div class="col-md-6 col-md-offset-3">
                 <div id="videoDiv" class="form-group">
 
                 </div>
