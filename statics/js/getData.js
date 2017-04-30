@@ -144,11 +144,11 @@ function validateNewVideoForm(){
 }
 
 function validate(){
-    // if ($('#vidTitle').val().length > 0 && $('#vidLink').val().length > 0) {
-    //     $("#genreDD").removeAttr("disabled", false);
-    // }
-    // else {
-    //   $("#genreDD").attr("disabled", true);
-    // }
+    if ($('#vidTitle').val().length > 0 && $('#vidLink').val().length > 0) {
+        $("#genreDD").removeAttr("disabled", false);
+    }
+    else {
+      $("#genreDD").attr("disabled", true);
+    }
     console.log($('#vidTitle').val());
 }
