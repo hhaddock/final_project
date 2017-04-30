@@ -19,7 +19,6 @@ $(document).ready(function(){
     if(submit == 0){
       submitVideo();
       clearVideos();
-      getVideoGenres();
       getAllVideoData();
       $('#vidTitle').val('');
       $('#vidLink').val('');
