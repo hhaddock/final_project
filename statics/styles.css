@@ -2,13 +2,6 @@ iframe{
   box-shadow: 5px 5px 5px #262626;
 }
 
-body{
-  background-image: url(../assets/bng.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 span{
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
