@@ -46,7 +46,7 @@
             <div id="deleteVideoForm" class="form-group">
               <br>
               <input type="text" id="" class="form-control" placeholder="Enter Video Title"><br>
-              <input type="button" id="" class="btn btn-secondary" value="Delete Video">
+              <input type="button" id="" class="btn btn-seconday" value="Delete Video">
             </div>
           </div>
           <hr>
