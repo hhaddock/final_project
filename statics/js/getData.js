@@ -49,7 +49,7 @@ function getVideoGenres(){
     success: function(res){
       console.log(res);
       for(i = 0; i < res.length; i ++){
-        populateDD(res[i].genre, '#genreDD');
+        populateDD(res[i].genre,res[i].id, '#genreDD');
       }
     }
   });
