@@ -35,6 +35,13 @@
               <input type="button" id="submitNewGenre" class="btn btn-success" value="Add Genre">
             </div>
           </div>
+          <div class="col-md-3 col-md-push-1">
+            <div id="addGenreForm" class="form-group">
+              <br>
+              <input type="text" id="newGenre" class="form-control" placeholder="Enter Genre Here"><br>
+              <input type="button" id="submitNewGenre" class="btn btn-success" value="Add Genre">
+            </div>
+          </div>
         </div>
       </div>
     </div>
