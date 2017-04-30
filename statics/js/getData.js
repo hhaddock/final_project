@@ -142,9 +142,9 @@ function validateNewVideoForm(){
       return 1;
     } else {
     return 0;
+    }
   }
 }
-
 function validate(){
     if ($('#vidTitle').val().length > 0 && $('#vidLink').val().length > 0) {
         $("#genreDD").removeAttr("disabled", false);
