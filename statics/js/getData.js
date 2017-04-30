@@ -5,6 +5,7 @@ $(document).ready(function(){
   $('#addVideoForm').hide();
 
   $('#showVideos').click(function(){
+    clearDD('#genreFilterDD');
     clearVideos();
     getAllVideoData();
     getVideoGenres();
