@@ -118,14 +118,14 @@ body{
   height: 16px;
 }
 .videoBg {
-position:absolute;
-z-index: 0;
-left:125px;
-top:125px;
+  position:absolute;
+  z-index: 0;
+  left:125px;
+  top:125px;
 }
 .videoFg {
-position:absolute;
-z-index: 1;
-left:250px;
-top:250px;
+  position:absolute;
+  z-index: 1;
+  left:250px;
+  top:250px;
 }
