@@ -9,6 +9,7 @@
         $_SESSION['loggedin'] = "true";
         header("Location: http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/views/homePage.php");
       } else {
+        echo "<span>Error: username or password is incorrect</span>";
         header("Location: http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/");
       }
     }
