@@ -45,6 +45,10 @@ body{
   height: 60%;
 }
 
+.paperTexture{
+  background-image: url(../assets/paperTexture.png);
+  border-radius: 3px;
+}
 
 .titleText{
   font-size: 48pt;
