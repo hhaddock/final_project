@@ -58,6 +58,7 @@ function getVideoGenres(){
       for(i = 0; i < res.length; i++){
         // populateDD(res[i].genre, '#genreDD');
         // populateDD(res[i].genre, '#genreFilterDD');
+        console.log(res[i].genre)
         populateDropDowns(res[i].genre);
       }
     }
