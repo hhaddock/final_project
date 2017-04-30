@@ -74,6 +74,7 @@ body{
 .paperTexture{
   background-image: url(../assets/paperTexture.png);
   border-radius: 6px;
+  z-index: -1;
 }
 
 .titleText{
