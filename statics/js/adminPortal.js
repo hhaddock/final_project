@@ -44,7 +44,18 @@ function deleteGenreFromList(deleteGenre){
     type: "get",
     dataType: "json",
     success: function(res){
-      console.log(res);
+      for(i = 0; i < res.length; i++){
+        if(res[i].genre == deleteGenre){
+          $.ajax({
+            url: "http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com:8000/api/genres/"+ res[i]._id,
+            type: "delete",
+            dataType: "json",
+            success: function(res){
+              console.log(res.genre + " Has been deleted");
+            }
+          });
+        }
+      }
     }
   });
 }
