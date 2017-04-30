@@ -12,10 +12,8 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <div class="text-center">
-          <h1>Music Video Player Admin Portal</h1>
-          <hr>
-        </div>
+        <h1 class="text-center">Music Video Player Admin Portal</h1>
+        <hr>
         <div class="form-inline">
           <div class="row">
             <div class="col-md-3 col-md-offset-1">
