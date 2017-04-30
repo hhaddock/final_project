@@ -9,16 +9,14 @@ $(document).ready(function(){
   $('#showVideos').click(function(){
     clearVideos();
     getAllVideoData();
-    $('#addVideoForm').slideUp();
-    $('#videoArea').slideToggle("slow");
+    $('#addVideoForm').hide();
+    $('#videoArea').fadeToggle("slow");
   });
 
   $('#addVideo').click(function(){
-    setTimeout(function(){
-        getAllVideoData();
-        $('#videoArea').hide();
-        $('#addVideoForm').fadeIn("slow");
-      }, 100);
+    getAllVideoData();
+    $('#videoArea').hide();
+    $('#addVideoForm').fadeIn("slow");
   });
 
   $('#addVidBtn').click(function(){
