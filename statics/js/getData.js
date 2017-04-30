@@ -3,9 +3,9 @@
 $(document).ready(function(){
   $('#videoArea').hide();
   $('#addVideoForm').hide();
-  getVideoGenres();
 
   $('#showVideos').click(function(){
+    clearDD('#genreDD');
     clearVideos();
     getAllVideoData();
     getVideoGenres();
