@@ -39,7 +39,7 @@
             <div id="deleteGenreForm" class="form-group">
               <br>
               <input type="text" id="genreToDelete" class="form-control" placeholder="Enter Genre Here"><br>
-              <input type="button" id="submitDeleteGenre" class="btn btn-success" value="Add Genre">
+              <input type="button" id="submitDeleteGenre" class="btn btn-primary text-danger" value="Delete Genre">
             </div>
           </div>
         </div>
