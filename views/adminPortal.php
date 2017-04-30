@@ -15,6 +15,9 @@
       <div class="jumbotron">
         <h1>Music Video Player Admin Portal</h1>
         <hr>
+        <div class="form-group">
+          <input type="button" id="addGenre" class="btn btn-warning" value="Add A Genre">
+        </div>
       </div>
     </div>
   </body>
