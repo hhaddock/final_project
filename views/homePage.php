@@ -59,7 +59,7 @@
               </select>
             </div>
             <div class="col-md-2">
-              <input type="button" id="resetFilterBtn" class="btn btn-secondary btn-block" value="Reset">
+              <input type="button" id="resetFilterBtn" class="btn btn-secondary text-danger btn-block" value="Reset">
             </div>
           </div>
           <div class="row">
