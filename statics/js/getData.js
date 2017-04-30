@@ -21,6 +21,8 @@ $(document).ready(function(){
       clearVideos();
       getVideoGenres();
       getAllVideoData();
+      $('#vidTitle').val('');
+      $('#vidLink').val('');
       $('#addVideoForm').slideUp();
       $('#videoArea').fadeIn("slow");
     } else {
