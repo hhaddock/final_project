@@ -15,6 +15,7 @@ $(document).ready(function(){
 
   $('#addVideo').click(function(){
     clearDD('#genreDD');
+    getVideoGenres();
     $('#videoArea').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
