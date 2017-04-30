@@ -3,12 +3,10 @@
 $(document).ready(function(){
   $('#videoArea').hide();
   $('#addVideoForm').hide();
-  clearDD();
+
   getVideoGenres();
 
   $('#showVideos').click(function(){
-    clearDD();
-    getVideoGenres();
     clearVideos();
     getAllVideoData();
     $('#addVideoForm').slideUp();
@@ -16,8 +14,6 @@ $(document).ready(function(){
   });
 
   $('#addVideo').click(function(){
-    clearDD();
-    getVideoGenres();
     $('#videoArea').slideUp();
     $('#addVideoForm').slideToggle("slow");
   });
@@ -25,9 +21,7 @@ $(document).ready(function(){
   $('#addVidBtn').click(function(){
     submitVideo();
     clearVideos();
-    clearDD();
     getAllVideoData();
-    getVideoGenres();
     $('#addVideoForm').slideUp();
     $('#videoArea').slideToggle("slow");
   });
