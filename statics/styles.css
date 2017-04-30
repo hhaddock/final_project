@@ -91,7 +91,7 @@ body{
   background: linear-gradient(-45deg, #262626 5px, transparent 0), linear-gradient(45deg, #262626 5px, transparent 0);
   background-position: left-bottom;
   background-repeat: repeat-x;
-  background-size: 32px 32px;
+  background-size: 16px 16px;
   content: " ";
   display: block;
   position: absolute;
