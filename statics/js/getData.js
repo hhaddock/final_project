@@ -116,7 +116,7 @@ function clearDD(){
   $('#genreDD').text('');
   $('#genreDD').append("<option disabled selected>Choose A Genre...</option>");
   $('#genreFilterDD').text('');
-  $('#genreFilterDD').append("<option disabled selected>Choose A Genre...</option>");
+  $('#genreFilterDD').append("<option disabled selected>Filter by a specific genre</option>");
 }
 
 function populateDD(genre, loc){
