@@ -12,6 +12,8 @@ $(document).ready(function(){
         addGenre = $('#newGenre').val();
         updateGenreList(addGenre);
         addGenre = "";
+      }  else {
+        alert("Error: you must enter a genre to delete");
       }
     });
   });
@@ -24,6 +26,8 @@ $(document).ready(function(){
         deleteGenre = $('#genreToDelete').val();
         deleteGenreFromList(deleteGenre);
         deleteGenre = "";
+      } else {
+        alert("Error: you must enter a genre to delete");
       }
     });
   });
