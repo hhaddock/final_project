@@ -137,7 +137,7 @@ function validateNewVideoForm(){
       alert("yay!");
     }
     // return 1;
-    console.log($('#genreDD').text());
+    console.log($('#genreDD option:selected').text());
   } else {
     return 0;
   }
