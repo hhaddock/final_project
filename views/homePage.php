@@ -52,10 +52,12 @@
           <div id="videoArea" class="text-center">
             <div class="row">
               <div class="col-lg-4 col-lg-offset-4">
-                  <selectid="genreFilterDD" class="form-control">
-                    <option disabled selected>Choose a Genre</option>
-                  </select>
-                  <input type="button" id="resetFilterBtn" class="btn btn-primary" value="Reset">
+                <select id="genreFilterDD" class="form-control">
+                  <option disabled selected>Choose a Genre</option>
+                </select>
+              </div>
+              <div class="col-lg-4 col-lg-offset-4">
+                <input type="button" id="resetFilterBtn" class="btn btn-primary" value="Reset">
               </div>
             </div>
             <div class="row">
