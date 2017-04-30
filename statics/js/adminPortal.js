@@ -4,8 +4,8 @@ $(document).ready(function(){
   $('#addGenre').click(function(){
     $('#addGenreForm').slideToggle();
     $('#submitNewGenre').click(function(){
-      if($('#newGenre').val() != null){
-        addGenre = $('#newGenre').val();
+      if($('#newGenre').text() != ""){
+        addGenre = $('#newGenre').text();
         updateGenreList(addGenre);
       }
     });
