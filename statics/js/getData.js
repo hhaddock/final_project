@@ -46,7 +46,7 @@ function getAllVideoData(){
       clearDD('#genreFilterDD');
       for(i = 0; i < res.length; i++){
         formatVideos(res[i].title, res[i].videoID);
-        populateDD(res[i].genre,res[i]._id, '#genreFilterDD');
+        populateDD(res[i].genre, '#genreFilterDD');
       }
     }
   });
