@@ -37,7 +37,7 @@
 
           <div class="row">
             <div class="col-md-4 col-md-offset-4">
-              <input type="button" class="btn btn-primary btn-block" value="Log In" onclick="validateForm()">
+              <input type="button" class="btn btn-primary btn-block" value="Log In" onclick="validateLoginForm()">
             </div>
           </div>
         </form>

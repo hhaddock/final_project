@@ -1,4 +1,4 @@
-function validateForm(){
+function validateLoginForm(){
   if($('#userID').val() == "" || $('#passID').val() == ""){
     alert("Error: all form elements must be filled out.");
   } else {

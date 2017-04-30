@@ -20,11 +20,17 @@ $(document).ready(function(){
   });
 
   $('#addVidBtn').click(function(){
-    submitVideo();
-    clearVideos();
-    getAllVideoData();
-    $('#addVideoForm').slideUp();
-    $('#videoArea').fadeIn("slow");
+    submit = validateNewVideoForm();
+    if(submit == 1){
+      // submitVideo();
+      // clearVideos();
+      // getAllVideoData();
+      // $('#addVideoForm').slideUp();
+      // $('#videoArea').fadeIn("slow");
+      alert("It worked!");
+    } else {
+      alert("Error: all form elements must be filled out.");
+    }
   });
 
   $('#resetFilterBtn').click(function(){
@@ -123,4 +129,14 @@ function clearDD(){
 function populateDropDowns(genre){
   $('#genreDD').append("<option value='"+genre+"' >"+genre+"</option>");
   $('#genreFilterDD').append("<option value='"+genre+"' >"+genre+"</option>");
+}
+
+function validateNewVideoForm(){
+  if($('#vidTitle').val() == ''){
+    alert("Error");
+    return 1;
+  } else {
+    alert("good job");
+    return 0;
+  }
 }
