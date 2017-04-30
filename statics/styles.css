@@ -23,3 +23,9 @@ body{
   width: 75%;
   height: 60%;
 }
+
+
+.titleText{
+  font-size: 48pt;
+  color: #e60000;
+}
