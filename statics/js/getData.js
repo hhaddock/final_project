@@ -21,7 +21,7 @@ $(document).ready(function(){
 
   $('#addVidBtn').click(function(){
     submit = validateNewVideoForm();
-    if(submit == 1){
+    if(submit == 0){
       // submitVideo();
       // clearVideos();
       // getAllVideoData();
@@ -133,10 +133,8 @@ function populateDropDowns(genre){
 
 function validateNewVideoForm(){
   if($('#vidTitle').val() == ''){
-    alert("Error");
     return 1;
   } else {
-    alert("good job");
     return 0;
   }
 }
