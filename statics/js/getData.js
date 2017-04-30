@@ -145,7 +145,7 @@ function validateNewVideoForm(){
   //   return 1;
   // } else {
   //   return 0;
-  // }
+  }
   console.log($('#genreDD').text());
 }
 
