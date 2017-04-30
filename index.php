@@ -9,7 +9,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="statics/js/formValidation.js"></script>
   </head>
-  <body>
+  <body class="bgGif">
     <div class="paperTexture center-div container">
       <h1 class="text-center titleText textShadow">Welcome To Hayden's Playlist App</h1>
       <hr><br>
