@@ -21,7 +21,7 @@ function updateGenreList(newGenre){
     dataType: "json",
     data: {genre: newGenre},
     success: function(res){
-      console.log("Updated Lists of genres with "+ newGenre);
+      console.log("Updated List of genres with "+ newGenre);
     }
   });
 }

@@ -22,6 +22,9 @@
             <div class="col-md-4 col-md-offset-1">
               <input type="button" id="deleteVideo" class="btn btn-danger btn-block" value="Delete A Video">
             </div>
+            <div class="col-md-4 col-md-offset-1">
+              <input type="button" id="goBack" class="btn btn-info btn-block" value="Go Back">
+            </div>
           </div>
         </div>
         <div class="row">
