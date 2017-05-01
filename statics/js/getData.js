@@ -141,6 +141,9 @@ function populateDropDowns(genre){
 }
 
 function validateNewVideoForm(){
+  title = $('#vidTitle').val();
+  vidlink = $('#vidLink').val();
+  ddval = $('#genreDD').val();
   // if($('#vidTitle').val() == '' || $('#vidLink').val() == ''){
   //   if($('#genreDD').val() == null){
   //     return 1;
@@ -148,9 +151,11 @@ function validateNewVideoForm(){
   //   return 0;
   //   }
   // }
-  console.log($('#vidTitle').val());
-  console.log($('#vidLink').val());
-  console.log($('#genreDD').val());
+  if(title == '' || vidlink == '' || ddval == 'none'){
+    console.log(title);
+    console.log(vidlink);
+    console.log(ddval);
+  }
 }
 function validate(){
     if ($('#vidTitle').val().length > 0 && $('#vidLink').val().length > 0) {
