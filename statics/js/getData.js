@@ -20,6 +20,7 @@ $(document).ready(function(){
 
   $('#addVidBtn').click(function(){
     submit = validateNewVideoForm();
+    console.log(submit);
     // if(submit == 1){
     //   submitVideo();
     //   clearVideos();
@@ -144,17 +145,13 @@ function validateNewVideoForm(){
   title = $('#vidTitle').val();
   vidlink = $('#vidLink').val();
   ddval = $('#genreDD').val();
-  // if($('#vidTitle').val() == '' || $('#vidLink').val() == ''){
-  //   if($('#genreDD').val() == null){
-  //     return 1;
-  //   } else {
-  //   return 0;
-  //   }
-  // }
   if(title == '' || vidlink == '' || ddval == null){
-    console.log(title);
-    console.log(vidlink);
-    console.log(ddval);
+    // console.log(title);
+    // console.log(vidlink);
+    // console.log(ddval);
+    return 0;
+  } else {
+    return 1;
   }
 }
 function validate(){
