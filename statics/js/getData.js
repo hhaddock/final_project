@@ -142,8 +142,8 @@ function populateDropDowns(genre){
 
 function validateNewVideoForm(){
   if($('#vidTitle').val() == '' || $('#vidLink').val() == ''){
-    if($('#genreDD').val() == 'none'){
-      // return 1;
+    if($('#genreDD').val() == null){
+      return 1;
       console.log($('#genreDD').val());
     } else {
     return 0;
