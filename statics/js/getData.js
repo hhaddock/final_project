@@ -151,7 +151,7 @@ function validateNewVideoForm(){
   //   return 0;
   //   }
   // }
-  if(title == '' || vidlink == '' || ddval == 'none'){
+  if(title == '' || vidlink == '' || ddval == null){
     console.log(title);
     console.log(vidlink);
     console.log(ddval);
