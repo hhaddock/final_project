@@ -143,7 +143,7 @@ function populateDropDowns(genre){
 function validateNewVideoForm(){
   console.log($('#genreDD').val());
   if($('#vidTitle').val() == '' || $('#vidLink').val() == ''){
-    if($('#genreDD').val() == 'Choose A Genre...'){
+    if($('#genreDD').val() == 'none'){
       return 1;
     } else {
     return 0;
