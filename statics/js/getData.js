@@ -20,17 +20,17 @@ $(document).ready(function(){
 
   $('#addVidBtn').click(function(){
     submit = validateNewVideoForm();
-    if(submit == 1){
-      submitVideo();
-      clearVideos();
-      getAllVideoData();
-      $('#vidTitle').val('');
-      $('#vidLink').val('');
-      $('#addVideoForm').slideUp();
-      $('#videoArea').fadeIn("slow");
-    } else {
-      alert("Error: all form elements must be filled out.");
-    }
+    // if(submit == 1){
+    //   submitVideo();
+    //   clearVideos();
+    //   getAllVideoData();
+    //   $('#vidTitle').val('');
+    //   $('#vidLink').val('');
+    //   $('#addVideoForm').slideUp();
+    //   $('#videoArea').fadeIn("slow");
+    // } else {
+    //   alert("Error: all form elements must be filled out.");
+    // }
   });
 
   $('#resetFilterBtn').click(function(){
