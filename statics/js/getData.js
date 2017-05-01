@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   $('#addVidBtn').click(function(){
     submit = validateNewVideoForm();
-    if(submit == 1){
+    if(submit == 0){
       submitVideo();
       clearVideos();
       getAllVideoData();
