@@ -141,10 +141,10 @@ function populateDropDowns(genre){
 }
 
 function validateNewVideoForm(){
-  console.log($('#genreDD').val());
   if($('#vidTitle').val() == '' || $('#vidLink').val() == ''){
-    if($('#genreDD').val() == null){
-      return 1;
+    if($('#genreDD').val() == 'none'){
+      // return 1;
+      console.log($('#genreDD').val());
     } else {
     return 0;
     }
