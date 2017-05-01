@@ -7,8 +7,8 @@ $(document).ready(function(){
   $('#showVideos').click(function(){
     $('#vidTitle').val('');
     $('#vidLink').val('');
-    clearDD();
-    getVideoGenres();
+    // clearDD();
+    // getVideoGenres();
     $('#addVideoForm').hide();
     $('#videoArea').fadeToggle("slow");
   });
