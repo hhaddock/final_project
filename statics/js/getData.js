@@ -144,9 +144,6 @@ function validateNewVideoForm(){
   vidlink = $('#vidLink').val();
   ddval = $('#genreDD').val();
   if(title == '' || vidlink == '' || ddval == null){
-    // console.log(title);
-    // console.log(vidlink);
-    // console.log(ddval);
     return 0;
   } else {
     return 1;
