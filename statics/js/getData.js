@@ -20,6 +20,7 @@ $(document).ready(function(){
 
   $('#addVidBtn').click(function(){
     submit = validateNewVideoForm();
+    console.log($(submit);
     if(submit == 1){
       submitVideo();
       clearVideos();
@@ -144,7 +145,6 @@ function validateNewVideoForm(){
   if($('#vidTitle').val() == '' || $('#vidLink').val() == ''){
     if($('#genreDD').val() == null){
       return 1;
-      console.log($('#genreDD').val());
     } else {
     return 0;
     }
