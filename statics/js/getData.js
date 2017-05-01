@@ -147,11 +147,10 @@ function validateNewVideoForm(){
   //   } else {
   //   return 0;
   //   }
+  // }
   console.log($('#vidTitle').val());
   console.log($('#vidLink').val());
   console.log($('#genreDD').val());
-
-  }
 }
 function validate(){
     if ($('#vidTitle').val().length > 0 && $('#vidLink').val().length > 0) {
