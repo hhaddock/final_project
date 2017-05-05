@@ -10,9 +10,14 @@ $(document).ready(function(){
     $('#deleteVideoForm').slideUp();
     $('#addGenreForm').slideToggle();
     $('#submitNewGenre').click(function(){
-      addGenre = $('#newGenre').val();
-      updateGenreList(addGenre);
-      $('#newGenre').val('');
+      if($('#newGenre').val() != ''){
+        // addGenre = $('#newGenre').val();
+        // updateGenreList(addGenre);
+        // $('#newGenre').val('');
+        console.log($('#newGenre').val());
+      } else {
+        console.log($('#newGenre').val());
+      }
     });
   });
 
