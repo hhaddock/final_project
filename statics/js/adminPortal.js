@@ -11,12 +11,11 @@ $(document).ready(function(){
     $('#addGenreForm').slideToggle();
     $('#submitNewGenre').click(function(){
       if($('#newGenre').val() != ''){
-        // addGenre = $('#newGenre').val();
-        // updateGenreList(addGenre);
-        // $('#newGenre').val('');
-        console.log($('#newGenre').val());
+        addGenre = $('#newGenre').val();
+        updateGenreList(addGenre);
+        $('#newGenre').val('');
       } else {
-        console.log($('#newGenre').val()); 
+        alert("Error: all form elements must be filled out");
       }
     });
   });
