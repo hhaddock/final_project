@@ -11,6 +11,7 @@
     <script type="text/javascript" src="../statics/js/adminPortal.js"></script>
   </head>
   <body class="bgGif">
+    <?php if(isset($_SESSION['loggedin'])){ ?>
     <div class="container">
         <h1 class="text-center titleText textShadow">Music Video Player Admin Portal</h1>
         <hr>
@@ -57,6 +58,9 @@
           </div>
       </div>
     </div>
+    <?php } else {
+      header("Location: http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com/final_project/");
+    } ?>
   </body>
   <footer>
     <div class="row">
