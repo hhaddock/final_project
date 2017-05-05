@@ -16,7 +16,7 @@ $(document).ready(function(){
         // $('#newGenre').val('');
         console.log($('#newGenre').val());
       } else {
-        console.log($('#newGenre').val());
+        console.log($('#newGenre').val()); 
       }
     });
   });
